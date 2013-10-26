@@ -1,0 +1,114 @@
+//======================================================================// 
+                                                                       //
+     // _page.scss              		                           
+		                                                     		 //-----[ Page
+//==================================================================//
+
+   
+       
+/*  
+    
+    This file defines page specific elements ( home | about | classes ) ect.
+
+*/
+
+
+
+
+//==================================================================
+//	Home Page
+//==================================================================
+
+
+// About tout
+.iAbout {
+	@include sizeEl(block, left, 100%, 550px);
+	// @include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
+	// -moz-background-size: 100% 465px;
+ //    	background-size: 100% 465px;
+
+	// padding: 2.5%;
+
+	color: $white;
+}
+
+// about title 
+.iAbout h2 {
+	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+	color: $white;
+	padding: 15px 0 15px 0;
+}
+
+// about tout
+.iAboutText {
+	@include sizeEl(block, left, 100%, 275px);
+	@include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
+	padding: 5%;
+}
+
+// newsletter tout
+.iAboutText div {display:none;}
+
+// classes
+.iAboutClass {
+	@include sizeEl(block, left, 100%, 275px);
+	@include backgroundImg('mHomeSprite.jpg', no-repeat, 0px -275px);
+
+	padding: 5%;
+	margin: 0 !important;
+
+	color: $white;
+	text-align: right;
+}
+
+.iYogaAk {
+	@include sizeEl(block, left, 100%, 600px);
+}
+
+.iYogaKid {
+	@include sizeEl(block, left, 100%, 325px);
+	@include backgroundImg('mHomeSprite.jpg', no-repeat, right -600px);
+
+	padding: 5%;
+
+	color: $white;
+}
+
+.iYogaKid h2 {
+	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+	color: $white;
+	padding: 15px 0 15px 0;
+}
+
+.iYogaKid .btn {
+	margin: 0 15px 0 0;
+}
+
+.iYogaAdult {
+	@include sizeEl(block, left, 100%, 275px);
+	@include backgroundImg('mHomeSprite.jpg', no-repeat, left -925px);
+
+	padding: 5%;
+
+	color: $white;
+	text-align: right;
+}
+
+.iYogaAdult h2 {
+	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+	color: $white;
+	padding: 15px 0 15px 0;
+}
+
+.iYogaAdult .btn {
+	margin: 0 0 0 15px;
+}
+
+.snapG, .iBlogWrap, .iInstaWrap {
+	display: none;
+}
+
+
+
+
+

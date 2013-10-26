@@ -1,0 +1,20 @@
+//========================================================================// 
+	                                                                   //
+		// _600.scss                		                        //     600
+	                                                                 //
+//====================================================================//
+
+
+// ripped paper top
+.ftw:before {
+	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -61px);
+	max-width: 1200px;
+	top: -15px;
+}
+
+// ripped paper bottom
+.ftw:after {
+	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -112px);
+	max-width: 1200px;
+	bottom: -15px;
+}

@@ -1,0 +1,203 @@
+//========================================================================// 
+	                                                                     //
+		// _480.scss                		                            //     480
+	                                                                   //
+//====================================================================//
+
+//==================================================================
+//	Global Elements
+//==================================================================
+
+// all elements that change on resize will animate into place
+*{@include transAni(all 0.3s ease);}
+
+// header
+
+.gHeader {
+	@include sizeEl(block, left, 100%, 145px);
+	@include backgroundImg('headerBg.jpg', repeat-x, top);
+}
+
+
+// logo
+.staticLogo {
+	@include sizeEl(block, none, 100%, 58px);
+	position: absolute;
+
+}
+
+.staticLogo img {
+	@include sizeEl(block, none, 278px, 58px);
+	margin: 17px auto;
+}
+
+// nav icon
+.navIcon {
+	display: none;
+}
+
+
+// header / footer
+.gFooter {display: block;}
+
+// navagation
+.gNav, .gNav ul, .gNav ul li, .gNav ul li a{display: block;}
+
+// header social links
+// header facebook
+.gFacebook {
+	display: none;
+}
+
+// header instagram
+.gInstagram {
+	display: none;
+}
+
+// header social grunge
+.gFacebook:after, .gInstagram:after {display: none;}
+
+
+//==================================================================
+//	Global Footer
+//==================================================================
+
+
+// footer wrap
+.gFooter {
+	@include sizeEl(block, left, 100%, 180px);
+	@include backgroundImg('footBg.jpg', repeat-x, bottom);
+	position: relative;
+	overflow: hidden;
+}
+
+// footer logo
+.gFooter h1 {
+	display: none;
+}
+
+// mobile footer nav
+.footNav {
+	display: none;
+}
+
+// foot utlity 
+.footUtility {
+	display: block;
+}
+
+// foot leags
+.footLegal {
+	display: block;
+}
+
+//   ($width, $height, $img, $repeat, $position) 
+
+// this is used for the center logo
+.gFooter:before {
+	@include afterImg(274px, 180px, "sprite.png", no-repeat, -730px -214px);
+
+	position: relative !important;
+	top: 0px;
+	margin: 0 auto;
+}
+
+// fix the pos | wits messed up becasue of the cented after class
+.gFooter .mid {
+	position: relative;
+	top: -122px;
+	display: block;
+
+	width: 100%; 
+	height: 100px;
+}
+
+// Sign up for newsletter and sign up for classes links
+.footUtility {
+	display: block;
+	position: absolute;
+	width: 40%;
+	top: 35px;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+
+	@include formal(14px, $navLinkColor)
+
+}
+
+// add decoration on hocer 
+.footUtility:hover {
+	text-decoration: underline;
+}
+
+// news letter link
+.fUnews {
+	left: 0;
+	text-align: right;
+}
+
+// class link
+.fUclass {
+	right: 0;
+	text-align: left;
+}
+
+// footer legal text
+.footLegal {
+	position: absolute;
+	top: -8px;
+
+	font-size:10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $navLinkColor;
+}
+
+// spans that have the divider
+.footLegal span {
+	border-left: solid 1px $navLinkColor;
+	padding: 0 10px;
+}
+
+
+// remove padding and border on firt child
+.footLegal span:first-child {
+	border-left: none;
+}
+
+
+// footer socail ul wrap
+.footSocial {
+	position: absolute;
+	@include sizeEl(block, none, 120px, 30px);
+	top: -8px;
+	right: 0;
+
+	font-size:16px;
+	color: $navLinkColor;
+
+}
+
+.footSocial li {
+	float: left;
+	width: 30px;
+	text-align: center
+}
+
+.footSocial li a{
+	color: $navLinkColor;
+	text-decoration: none !important;
+}
+
+
+//==================================================================
+//	Global Content
+//==================================================================
+
+.gContent {
+	margin: 0 auto;
+}
+
+.nonM { display: block !important; }
