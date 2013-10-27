@@ -10,6 +10,17 @@
 // }
 
 
+.ftw {
+	@include sizeEl(block, left, 100%, auto);
+	max-height: 325px;
+	padding: 0;
+}
+
+// this is the ipad right
+.rightPad {
+	float: right !important;
+}
+
 //==================================================================
 //	Global Elements
 //==================================================================
@@ -28,3 +39,209 @@
 	right: 5%;
 	text-align: right;
 }
+
+//==================================================================
+//	Classes Page
+//==================================================================
+
+.classPrice {
+	@include sizeEl(block, left, 50%, 330px);
+}
+
+
+.classesTextWrap {
+	@include sizeEl(block, left, 50%, auto);
+	border-left: solid 1px $classBorder;
+	border-right: solid 1px $classBorder;
+	padding: 2.5%;
+}
+
+.specailClasses {
+
+}
+
+.specailClasses {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+
+}
+
+.scWrapHalf {
+	@include sizeEl(block, left, 50%, auto);
+	padding: 0;
+	margin: 0;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.specialInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+	padding: 2.5%;
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+
+//==================================================================
+//	Blog Index
+//==================================================================
+
+// blog nav
+.bNav {
+	@include sizeEl(block, left, 32%, auto);
+}
+
+
+.featuredBlog {
+	@include sizeEl(block, right, 66%, auto);
+}
+
+.blogPost {
+	@include sizeEl(block, left, 48%, auto);
+}
+
+.blogHero {
+	height: auto;
+}
+
+// blog hero
+.blogHero div {
+	@include sizeEl(block, none, 100%, 335px);
+
+	max-width: 1140px;
+	margin: 20px auto 0 auto;
+}
+
+//==================================================================
+//	single post page
+//==================================================================
+
+.singlePostWrap {
+	@include sizeEl(block, right, 66%, auto);
+}
+
+// single post comments
+.commentsWrap img {
+	display: block;
+}
+
+.singleComment {
+	@include sizeEl(block, right, 72%, auto);
+}
+
+
+
+
+
+
+
+
+
+
+// contact page
+
+
+
+.contactWrap {
+	padding: 2.5%;
+}
+
+.contactInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0;
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.formNameWrap {
+	@include sizeEl(block, left, 46%, auto);
+}
+
+.nameRight {float: right;}
+
+// .formNameWrap label {
+// 	@include sizeEl(block, left, 47%, auto);
+// }
+
+// .firstName {
+// 	@include sizeEl(block, left, 100%, 35px);
+// }
+
+// .lastName {
+// 	@include sizeEl(block, left, 100%, 35px);
+// }
+
+.contactHalf {
+	@include sizeEl(block, left, 50%, auto);
+	background-color: none;
+	padding: 2.5%;
+	margin: 0 0 2.5% 0;
+
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+
+
+
+
+.mapContactInfo {
+	@include sizeEl(block, none, 368px, 157px);
+	background-color: transparent !important;
+	// position: absolute;
+	// z-index: 10;
+	top: 95px;
+	right: 0px;
+	@include spritePos("sprite.png", -1198px 0px);
+
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+
+
+	text-align: center;
+}
+
+.mapPhone {
+	position: absolute;
+	top: 10px;
+	left: 70px;
+	text-align: left;
+}
+
+.mapSocial, .mapAdress {
+	display: block;
+	position: absolute;
+}
+
+.mapAdress {
+	top: 53px;
+	left: 84px;
+}
+
+.mapSocial {
+	top: 108px;
+	left: 84px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

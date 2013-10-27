@@ -24,6 +24,23 @@
 // 	display: none;
 // }
 
+.pageWrap {
+	background-color: #bada55;
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto !important;
+	background-image:url(../img/bg.jpg);
+	position: relative;
+}
+
+.pageWrap:before {
+	@include afterImg(100%, 190px, "bodyBg.jpg", repeat-x, top center);
+	position: absolute;
+	top: 365px;
+	background-color: #bada55;
+	z-index: 0;
+}
 
 
 
@@ -223,8 +240,9 @@
 
 .gHeroWrap {
 	width: 100%;
-	max-width: 1200px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2 !important;
 }
 
 
@@ -240,6 +258,7 @@
 	@include backgroundImg('mfootHead.jpg', repeat-x, top);
 	position: relative;
 	overflow: hidden;
+	z-index: 10;
 }
 
 // mobile logo
@@ -260,6 +279,10 @@
 // foot leags
 .footLegal {
 	display: none;
+}
+
+.footLegal span{
+	font-size: 10px;
 }
 
 
@@ -287,17 +310,38 @@
 .gContent {
 	@include sizeEl(block, none, 100%, auto);
 	max-width: 1200px;
+	position: relative;
+	z-index: 1;
+}
+
+// chinese back ground
+.gContent:before, .gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, 0px 0px);
+	position: absolute;
+	top: 465px;
+	z-index: -2;
+
+	background-color: $b;
+}
+
+.gContent:before {left: -135px;}
+
+.gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, -398px 0px);
+	right: -135px; 
 }
 
 // featured tout wrap
 .ftw {
-	@include sizeEl(block, left, 95%, 325px);
+	@include sizeEl(block, left, 100%, inherit);
 	background-color: $white;
 	-webkit-box-shadow: 0 0 35px rgba(0,0,0,.05);
 	-moz-box-shadow: 0 0 35px rgba(0,0,0,.05);
 	box-shadow: 0 0 35px rgba(0,0,0,.05);
 	position: relative;
-	margin: -20px 2.5% 0 2.5%;
+	//margin: -20px 2.5% 0 2.5%;
+	z-index: 10 !important;
+	padding: 2.5%;
 }
 
 // // ripped paper top
@@ -319,7 +363,7 @@
 	position: relative;
 	z-index: 1;
 
-	background-color: #ccc;
+	// background-color: #ccc;
 }
 
 // this is the mind body schedule wrap

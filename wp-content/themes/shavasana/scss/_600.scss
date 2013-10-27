@@ -18,3 +18,12 @@
 	max-width: 1200px;
 	bottom: -15px;
 }
+
+
+.priceCol1 {
+	@include sizeEl(block, left, 50%, auto);
+}
+
+.priceCol2 {
+	@include sizeEl(block, left, 50%, auto);
+}

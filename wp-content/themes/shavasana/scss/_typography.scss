@@ -17,6 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight : $baseheadingfontweight;
 	color : $baseheadingfontcolor;
 	text-rendering : optimizelegibility;
+	padding: 0 0 10px 0;
+	color: $bPurple;
 }
 
 h1 small, h2 small {font-weight:normal; }
@@ -65,10 +67,11 @@ a {
 //=====//=====//   Typography   //=====//=====//
 
 
-p, ol, ul, dl, address {
+p, ol, ul, dl, address, span {
    margin-bottom: $baselineheight;
    line-height: 22px;
    @include font-size(9);
+   color: $paraColor;
 
 	a {
 		text-decoration:none;

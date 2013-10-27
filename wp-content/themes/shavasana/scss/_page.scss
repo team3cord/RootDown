@@ -108,6 +108,483 @@
 	display: none;
 }
 
+//==================================================================
+//	Classes Page
+//==================================================================
+
+.classesHero {
+	@include sizeEl(block, left, 100%, 300px);
+	background-color: $b;
+}
+
+.classPrice {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5% 5% 10% 5%;
+	position: relative;
+	z-index: 10;
+
+	color: $white;
+
+	background-color: $classesBlue;
+}
+
+.classPrice h3 {
+	font-size: 20px;
+	color: $white;
+	padding: 10px 0;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 8px rgba(0,0,0,.46);
+	font-weight: normal;
+}
+
+.classPrice span {
+	@include sizeEl(block, left, 100%, 30px);
+	color: $white;
+	letter-spacing: 1px;
+	padding: 0;
+}
+
+.classPrice i {
+	@include sizeEl(block, left, 100%, 30px);
+	color: $white;
+	letter-spacing: 1px;
+}
+
+.lastPrice {
+	padding: 20px 0 0 0 !important;
+}
+
+.classPrice span em {
+	@include sizeEl(block, left, 100%, 10px);
+	font-size: 11px;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.capMem {
+	@include sizeEl(block, left, 100%, 10px);
+	text-transform:uppercase;
+}
+
+.capMem span{
+	@include sizeEl(block, left, 100%, 10px);
+	text-transform:none;
+}
+
+.priceCol1 {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.priceCol2 {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.classWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.classesInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: #000;
+	color: $white;
+}
+
+.classesTextWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5% 5% 0 5%;
+	border-bottom: solid 1px $classBorder;
+}
+
+.classesTextWrap h2, .classesTextWrap p {
+	color: #fff;
+}
+
+.classesTextWrap .btn {
+	margin: 0 0 20px 0;
+}
+
+.specailClasses {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.scWrapHalf {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5%;
+	margin: 0 0 5% 0;
+
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+//==================================================================
+//	Blog Index
+//==================================================================
+
+// blog hero
+.blogHero {
+	@include sizeEl(block, left, 100%, 200px);
+}
+
+// hero image
+.blogHero div{
+	@include sizeEl(block, none, 100%, 200px);
+	margin: 0 auto;
+	background-color: #ccc;
+}
+
+.blogNavWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+// div nav wrap
+.bNav {
+	@include formal(18px, $bPurple);
+	@include sizeEl(block, left, 100%, auto);
+
+	margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+// actual nav el
+// .blogCatNav {
+// 	padding: 5%;
+// }
+
+// blog nave list items
+.blogCatNav li {
+	@include sizeEl(block, left, 100%, 50px);
+
+	border-bottom: solid 1px $grayBorder;
+
+}
+
+
+
+
+// blog nav links also the filter title
+.blogCatNav li a, .blogCatNav span {
+	display: block;
+	float: left;
+	width: 100%;
+	// padding: 15px 0;
+	padding: 15px 5% 5% 5%;
+}
+
+.blogCatNav li:hover {
+	background-color: $b;
+	@include backgroundImg("blogNavHover.png", repeat-x, top);
+}
+
+.blogCatNav li:hover a {
+	color: #fff;
+}
+
+.listTitle:hover {
+	background-image: none !important;
+}
+
+// filter title
+.blogCatNav span {
+	font-size: 18px;
+	padding: 2px 5% 0 5% !important;
+}
+
+// blag nav links
+.bNav a {
+	color: $bGray;
+}
+
+// featured post
+.featuredBlog {
+	@include sizeEl(block, left, 100%, auto);
+	
+	// margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+.featuredBlog div{padding: 5%;}
+
+// featured blog image
+.featuredBlog img {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+// blogWrap
+.blogWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+// blog row | this holds the blog touts in a row
+.blogRow {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.blogPost {
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+	background-color: $white;
+
+
+	margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+} 
+
+// paper texture
+.blogPost:after {
+	@include afterImg(100%, 20px, "sprite.png", no-repeat, absolute);
+	@include spritePos("sprite.png", 0px -144px);
+}
+
+// blog post image
+.blogPost img {
+	width: 100%;
+}
+
+.blogPost article {
+	padding: 5%;
+}
+
+//==================================================================
+//	Single Post Page
+//==================================================================
+
+// single wrap
+.singlePostWrap {
+	@include sizeEl(block, left, 100%, auto);
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+.halfFromWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.postWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5%;
+	position: relative;
+}
+
+.postWrap:after {
+	@include afterImg(100%, 10px, "sprite.png", no-repeat, 0px -150px);
+	left: 0;
+}
+
+.singlePostWrap img {
+	width: 100%;
+}
+
+// commment form wrap
+.commentFormWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0 5% 5% 5%;
+	position: relative;
+}
+
+// form lable
+.commentFormWrap input[type="submit"] {
+	float: right;
+	width: 150px;
+	margin: 10px 0 0 0;
+	position: relative;
+}
+
+.commentFormWrap:after {
+	@include afterImg(100%, 10px, "sprite.png", no-repeat, 0px -150px);
+	left: 0; 
+	bottom: 5px;
+}
+
+// single comments
+.commentsWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 3% 5% 5% 5%;
+}
+
+.commentsWrap img {
+	max-width: 185px;
+	display: none;
+	width:25%;
+	float: left;
+}
+
+.singleComment {
+	@include sizeEl(block, right, 100%, auto);
+}
+
+.commentsWrap h3 {
+	@include sizeEl(block, left, 100%, auto);
+	font-size: 22px;
+}
+
+// date
+
+.commentsWrap date {
+	@include sizeEl(block, right, 100%, auto);
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: $bGray;
+
+	margin: -10px 0 10px 0;
+
+}
+
+.commentsWrap p {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+// contact
+
+.mapWrap {
+	@include sizeEl(block, left, 100%, 300px);
+	padding: 40px 0 0 0;
+	background-color: none;
+	position: relative;
+}
+
+.mapContact {
+	@include sizeEl(block, none, 100%, 330px);
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+	position: relative;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.mapContactInfo {
+	@include sizeEl(block, none, 100%, 60px);
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	right: 0px;
+	// @include spritePos("sprite.png", 0px 0px);
+
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+
+	background-color: $white;
+	text-align: center;
+}
+
+.mapPhone {
+	font-size: 22px;
+	padding: 15px;
+	color: $bPurple;
+	text-decoration: none;
+}
+
+.mapSocial, .mapAdress {
+	display: none;
+}
+
+.contactWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.contactInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5% 2.5% 0 2.5%;
+}
+
+.contactHalf {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+	padding: 5%;
+	margin: 0 0 2.5% 0;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.angelaContact {
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	color: $bPurple;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.angelaContact a {
+	color: $bPurple;
+}
+
+.newsLetterInput {
+	@include sizeEl(block, left, 68%, 35px);
+}
+
+.signUpBtn {
+	@include sizeEl(block, right, 30%, 35px);
+}
+
+.contactSubmitBtn {
+	@include sizeEl(block, right, 130px, 35px);
+	margin: 10px 0 0 0;
+}
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+// .callUsWrap h2 {
+// 	text-shadow: 0 0 21px rgba(0,0,0,.85);
+// }
+
+
+
+
+
 
 
 
