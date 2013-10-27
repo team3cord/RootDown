@@ -584,6 +584,65 @@
 
 
 
+// About
+
+
+// blog hero
+.aboutHero {
+	@include sizeEl(block, left, 100%, 200px);
+}
+
+// hero image
+.aboutHero div{
+	@include sizeEl(block, none, 100%, 200px);
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+	background-color: #ccc;
+}
+
+
+.techerTitleWrap h1 {
+	display: none;
+}
+
+
+
+
+
+.teacherNav {
+	display: none;
+}
+
+.teacherPicNav {
+	display: none;
+}
+
+
+.teacher {
+		@include sizeEl(block, left, 100%, auto);
+		padding: 2.5%;
+
+}
+
+.teacherTextWrap {
+		@include sizeEl(block, left, 100%, auto);
+
+		background-color: $white;
+
+		-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+		-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+		box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.teacherTextWrap .mobileTeccherImg {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.ttwInner {
+	@include sizeEl(block, left, 100%, auto);
+
+	padding: 5%;
+}
 
 
 

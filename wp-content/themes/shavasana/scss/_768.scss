@@ -40,6 +40,23 @@
 	text-align: right;
 }
 
+// chinese back ground
+.gContent:before, .gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, 0px 0px);
+	position: absolute;
+	top: 465px;
+	z-index: -2;
+
+	background-color: $b;
+}
+
+.gContent:before {left: -135px;}
+
+.gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, -398px 0px);
+	right: -135px; 
+}
+
 //==================================================================
 //	Classes Page
 //==================================================================
@@ -231,6 +248,136 @@
 	left: 84px;	
 }
 
+
+
+// About
+
+.teacherWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+	position: relative;
+}
+
+.teacherInner {
+	@include sizeEl(block, left, 100%, auto);
+	// Delete this
+	background-color: #11528a;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.teacherInner h1, .teacherInner span {
+	color: $white;
+}
+
+.teacher {
+		@include sizeEl(block, left, 100%, auto);
+		padding: 2.5%;
+
+}
+
+.techerTitleWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.techerTitleWrap h1 {
+	@include sizeEl(block, left, 100%, auto);
+	text-align: center;
+	font-size: 38px;
+	padding: 15px 0 15px 0;
+}
+
+.teacherNav {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.teacherNav ul {
+	@include sizeEl(block, none, 95%, 42px);
+	margin: 0 auto;
+	background-color: $white;
+}
+
+.teacherNav li {
+	@include sizeEl(block, left, 25%, auto);
+	text-align: center;
+	padding: 10px 0;
+}
+
+.teacherNav a {
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: $bPurple;
+}
+
+
+.teacherTextWrap {
+		@include sizeEl(block, right, 65%, auto);
+
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background-color: transparent;
+}
+
+.teacherTextWrap h2, .teacherTextWrap p {
+	color: $white;
+}
+
+.mobileTeccherImg {
+	display: none !important;
+}
+
+.notActive {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // About
+
+// .teacherTextWrap {
+// 		@include sizeEl(block, left, 50%, auto);
+
+// 		background-color: $white;
+
+// 		-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+// 		-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+// 		box-shadow: 0 0 9px rgba(0,0,0,.15);
+// }
+
+// .teacherTextWrap .mobileTeccherImg {
+// 	@include sizeEl(block, left, 100%, auto);
+// }
+
+// .ttwInner {
+// 	@include sizeEl(block, left, 100%, auto);
+
+// 	padding: 5%;
+// }
 
 
 

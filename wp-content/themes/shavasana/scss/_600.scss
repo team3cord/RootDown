@@ -27,3 +27,22 @@
 .priceCol2 {
 	@include sizeEl(block, left, 50%, auto);
 }
+
+// about
+
+// About
+
+.teacher {
+		@include sizeEl(block, left, 50%, auto);
+		padding: 2.5%;
+
+}
+
+
+.teacherTextWrap {
+		@include sizeEl(block, left, 100%, auto);
+}
+
+// .teachRightPad {
+// 	float: right;
+// }

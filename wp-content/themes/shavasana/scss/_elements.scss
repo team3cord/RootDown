@@ -316,19 +316,7 @@
 
 // chinese back ground
 .gContent:before, .gContent:after {
-	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, 0px 0px);
-	position: absolute;
-	top: 465px;
-	z-index: -2;
-
-	background-color: $b;
-}
-
-.gContent:before {left: -135px;}
-
-.gContent:after {
-	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, -398px 0px);
-	right: -135px; 
+	display: none;
 }
 
 // featured tout wrap
