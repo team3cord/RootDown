@@ -6,6 +6,15 @@ Template Name: CLASSES Page
 get_header(); ?>
 
 
+<?php
+    include_once('MINDBODY_API_v0.5.php');
+        $mb = new MINDBODY_API();
+        $mbResult = $mb->getClasses();
+?>
+    <textarea style="background: #00FF00;"><?= $mb->getXMLRequest(); ?></textarea>
+    <textarea style="background: #FF00FF;"><?= $mb->getXMLResponse(); ?></textarea>
+
+
 
     <!-- =========================== | GLOBAL HERO WRAP | =========================== -->
     <section class="gHeroWrap homeHero fullWrap">
