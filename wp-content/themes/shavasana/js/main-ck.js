@@ -1,0 +1,1 @@
+$(function(){$("nav#menu").mmenu({dragOpen:!0});alert("awesome")});

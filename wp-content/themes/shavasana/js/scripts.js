@@ -14,5 +14,3 @@ $(function() {
 	}
 
 });
-
-alert('awesome');

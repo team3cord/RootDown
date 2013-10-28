@@ -3873,6 +3873,27 @@ span.custom-number-button {
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
     overflow: hidden !important; }
 
+  .teacherPicNav {
+    display: block;
+    float: left;
+    width: 127px;
+    height: 88px;
+    background: transparent url(../img/teacherNavBg.png) no-repeat 0px 0px;
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    z-index: 20; }
+
+  .tpnPopUp {
+    display: block;
+    float: left;
+    width: 177px;
+    height: 76px;
+    background: transparent url(../img/popupBg.png) no-repeat 0px 0px;
+    position: absolute;
+    top: -70px;
+    left: -18%; }
+
   .teacherCustomPic {
     display: block;
     float: left;
@@ -4099,17 +4120,7 @@ span.custom-number-button {
     width: 100%;
     height: auto;
     padding: 2.5% 0 0 0;
-    position: relative; }
-
-  .teacherPicNav {
-    display: block;
-    float: left;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #bada55; } }
+    position: relative; } }
 @media only screen and (min-width: 1200px) {
   .gFacebook {
     display: block;
