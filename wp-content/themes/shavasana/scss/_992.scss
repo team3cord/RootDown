@@ -77,8 +77,19 @@
 
 
 
+.teacherInner {
+	@include sizeEl(block, left, 100%, 615px);
+}
 
+.teacherImgs img {
+	width: auto !important;
+	position: absolute; bottom: 0;
+	left: 20%;
+}
 
+.teacherCustomPic {
+	@include sizeEl(block, left, 32%, 650px);
+}
 
 
 // about

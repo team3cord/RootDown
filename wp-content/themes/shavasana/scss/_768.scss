@@ -288,14 +288,40 @@
 }
 
 .teacherInner {
-	@include sizeEl(block, left, 100%, auto);
+	@include sizeEl(block, left, 100%, 615px);
+	@include backgroundImg("teacherBg.jpg",no-repeat,bottom left); 
 	// Delete this
 	background-color: #11528a;
+	position:relative;
 
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	overflow: hidden !important;
+
 }
+
+
+.teacherCustomPic {
+	@include sizeEl(block, left, 50%, 650px);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.teacherImgs {
+	@include sizeEl(block, left, 100%, auto);
+	position: absolute;
+	bottom: 0px;
+}
+
+.teacherImgs img {
+	width: 100%;
+	position: absolute; bottom: 0;
+}
+
 
 .teacherInner h1, .teacherInner span {
 	color: $white;
@@ -345,7 +371,7 @@
 
 
 .teacherTextWrap {
-		@include sizeEl(block, right, 65%, auto);
+		@include sizeEl(block, right, 55%, auto);
 
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
