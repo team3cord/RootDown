@@ -1849,7 +1849,7 @@ li[class*=" icon-"] {
     All global parent elements should have global name syntacts EX: gName
 
 */
-.pageWrap {
+#page {
   background-color: #bada55;
   display: block;
   float: left;
@@ -1858,7 +1858,7 @@ li[class*=" icon-"] {
   background-image: url(../img/bg.jpg);
   position: relative; }
 
-.pageWrap:before {
+#page:before {
   display: block;
   position: absolute;
   content: "";
@@ -2051,6 +2051,13 @@ li[class*=" icon-"] {
   position: relative;
   z-index: 2 !important; }
 
+.footerSlogan {
+  display: none;
+  float: left;
+  width: 100%;
+  height: 275px;
+  background: transparent url(../img/footSlogan.jpg) no-repeat top center; }
+
 .gFooter {
   display: block;
   float: left;
@@ -2102,7 +2109,7 @@ li[class*=" icon-"] {
   display: block;
   float: none;
   width: 100%;
-  height: auto;
+  height: inherit;
   max-width: 1200px;
   position: relative;
   z-index: 1; }
@@ -2226,19 +2233,51 @@ li[class*=" icon-"] {
   display: block;
   float: left;
   width: 100%;
-  height: 300px;
-  background-color: #bada55; }
+  height: auto;
+  position: relative;
+  padding: 0 0 0 0;
+  z-index: -10; }
+
+.classHeroInner {
+  display: block;
+  float: none;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  z-index: -100; }
+
+.classHeroInner div {
+  display: block;
+  float: none;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 5%; }
+
+.classHeroInner h1 {
+  font-size: 32px; }
 
 .classPrice {
   display: block;
   float: left;
   width: 100%;
   height: auto;
-  padding: 5% 5% 10% 5%;
+  padding: 2.5%;
   position: relative;
   z-index: 10;
   color: white;
   background-color: #156993; }
+
+.priceInner {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #104e79;
+  padding: 2.5% 2.5% 6% 2.5%;
+  text-align: center; }
 
 .classPrice h3 {
   font-size: 20px;
@@ -2336,20 +2375,25 @@ li[class*=" icon-"] {
   display: block;
   float: left;
   width: 100%;
-  height: auto;
-  padding: 2.5%; }
+  height: auto; }
 
 .scWrapHalf {
   display: block;
   float: left;
   width: 100%;
   height: auto;
-  padding: 5%;
   margin: 0 0 5% 0;
   background-color: white;
   -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 9px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.scWrapHalf div {
+  padding: 5%; }
 
 .blogHero {
   display: block;
@@ -2362,8 +2406,17 @@ li[class*=" icon-"] {
   float: none;
   width: 100%;
   height: 200px;
+  background: transparent url(../img/blogHeader.jpg) no-repeat top;
   margin: 0 auto;
-  background-color: #ccc; }
+  padding: 80px 0 0 0; }
+
+.blogHero div h2 {
+  color: white;
+  text-align: right;
+  padding: 0 3.5% 0 0; }
+
+.blogHero div p {
+  display: none; }
 
 .blogNavWrap {
   display: block;
@@ -2699,6 +2752,20 @@ li[class*=" icon-"] {
   width: 100%;
   height: 100%; }
 
+.callUs {
+  background: transparent url(../img/contactBg.jpg) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.callUsWrap h2, .callUsWrap p, .callUsWrap ul, .callUsWrap a,
+.cNewsletterWrap h2, .cNewsletterWrap p {
+  color: white; }
+
+.messageTitle {
+  color: #7a3a82; }
+
 .aboutHero {
   display: block;
   float: left;
@@ -2752,6 +2819,23 @@ li[class*=" icon-"] {
   width: 100%;
   height: auto;
   padding: 5%; }
+
+.blogCatNav li a {
+  background: transparent url(../img/blogTeachSprite.png) no-repeat 0px 0px;
+  overflow: hidden;
+  height: 49px; }
+
+.blogCatNav li a.bNavAngela {
+  background-position: right 5px; }
+
+.blogCatNav li a.bNavVictoria {
+  background-position: right -61px; }
+
+.blogCatNav li a.bNavChelsey {
+  background-position: right -135px; }
+
+.blogCatNav li a.bNavEleanor {
+  background-position: right -204px; }
 
 /*
   -------------------------------------------------- 
@@ -3010,6 +3094,10 @@ textarea, input {
   padding: 16px 0 14px 10px;
   position: relative;
   width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 12px;
   color: #4d4d4d;
   height: 35px;
@@ -3308,12 +3396,6 @@ span.custom-number-button {
   color: black; }
 
 @media only screen and (min-width: 480px) {
-  * {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-
   .gHeader {
     display: block;
     float: left;
@@ -3358,9 +3440,10 @@ span.custom-number-button {
     float: left;
     width: 100%;
     height: 180px;
-    background: transparent url(../img/footBg.jpg) repeat-x bottom;
+    background: transparent url(../img/footBg.png) repeat-x bottom;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: -90px; }
 
   .gFooter h1 {
     display: none; }
@@ -3501,8 +3584,58 @@ span.custom-number-button {
     display: block;
     float: left;
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  .blogPost {
+    display: block;
+    float: left;
+    width: 48%;
+    height: auto; }
+
+  .rightPad {
+    float: right !important; }
+
+  .classPrice {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 1.5%; }
+
+  .priceInner {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: 309px;
+    background: transparent url(../img/priceBg.jpg) no-repeat center;
+    padding: 2.5%;
+    border: solid 1px #187aaa; }
+
+  .classesTextWrap {
+    display: block;
+    float: left;
+    width: 50%;
+    height: auto;
+    border-left: solid 1px #292828;
+    border-right: solid 1px #292828;
+    padding: 2.5%; }
+
+  .classesInner {
+    background: transparent url(../img/classesBg.jpg) no-repeat bottom center;
+    background-color: #000000;
+    padding-bottom: 200px; } }
 @media only screen and (min-width: 768px) {
+  .gFooter {
+    margin-top: -90px; }
+
+  .footerSlogan {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 275px;
+    background: transparent url(../img/footSlogan.jpg) no-repeat top center; }
+
   .ftw {
     display: block;
     float: left;
@@ -3511,8 +3644,8 @@ span.custom-number-button {
     max-height: 325px;
     padding: 0; }
 
-  .rightPad {
-    float: right !important; }
+  .gContent {
+    padding: 0 0 500px 0; }
 
   .gFacebook {
     display: block;
@@ -3554,15 +3687,6 @@ span.custom-number-button {
     width: 50%;
     height: 330px; }
 
-  .classesTextWrap {
-    display: block;
-    float: left;
-    width: 50%;
-    height: auto;
-    border-left: solid 1px #292828;
-    border-right: solid 1px #292828;
-    padding: 2.5%; }
-
   .specailClasses {
     display: block;
     float: left;
@@ -3587,7 +3711,6 @@ span.custom-number-button {
     width: 100%;
     height: auto;
     background-color: white;
-    padding: 2.5%;
     -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.15); }
@@ -3604,22 +3727,28 @@ span.custom-number-button {
     width: 66%;
     height: auto; }
 
-  .blogPost {
-    display: block;
-    float: left;
-    width: 48%;
-    height: auto; }
-
   .blogHero {
-    height: auto; }
+    height: 385px; }
 
   .blogHero div {
     display: block;
     float: none;
     width: 100%;
-    height: 335px;
-    max-width: 1140px;
-    margin: 20px auto 0 auto; }
+    height: 100%;
+    max-width: 1200px;
+    padding: 80px 0 0 0; }
+
+  .blogHero div h2 {
+    font-size: 45px; }
+
+  .blogHero div p {
+    display: block;
+    float: right;
+    width: 55%;
+    height: 100%;
+    text-align: right;
+    color: white;
+    padding: 20px 3.5% 0 0; }
 
   .singlePostWrap {
     display: block;
@@ -3702,8 +3831,23 @@ span.custom-number-button {
     left: 84px; }
 
   .mapSocial {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
     top: 108px;
     left: 84px; }
+
+  .mapSocial li {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 50px;
+    text-align: left;
+    font-size: 20px; }
+
+  .mapSocial a {
+    color: #4d4d4d; }
 
   .teacherWrap {
     display: block;
@@ -3795,7 +3939,58 @@ span.custom-number-button {
     display: none !important; }
 
   .notActive {
-    display: none; } }
+    display: none; }
+
+  .classPrice {
+    padding: 10px; }
+
+  .classesHero {
+    padding: 20px 0 0 0; }
+
+  .classHeroInner {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 365px;
+    background: transparent url(../img/headerClass.jpg) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: white;
+    -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.15); }
+
+  .classHeroInner h1 {
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.46);
+    text-rendering: optimizelegibility;
+    font-size: 2.8em;
+    color: white; }
+
+  .classHeroInner p {
+    display: none; }
+
+  .classHeroInner div {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 365px;
+    text-align: left;
+    padding: 115px 5% 5% 5%; }
+
+  .specialClass1 {
+    background: transparent url(../img/specialClassBg1.jpg) no-repeat center bottom;
+    min-height: 650px; }
+
+  .specialClass2 {
+    background: transparent url(../img/specialClassBg2.jpg) no-repeat center bottom;
+    min-height: 650px; }
+
+  .specialClass1 h2, .specialClass1 p,
+  .specialClass2 h2, .specialClass2 p {
+    color: white; } }
 @media only screen and (min-width: 992px) {
   .gContent {
     padding: 0%; }
@@ -3807,7 +4002,7 @@ span.custom-number-button {
     width: 100% !important; }
 
   .blogNavWrap {
-    padding: 2.5% 2.5% 0 2.5%; }
+    padding: 0; }
 
   .blogPost {
     display: block;
@@ -3821,7 +4016,7 @@ span.custom-number-button {
     margin-right: 0 !important; }
 
   .blogRow {
-    padding: 2% 2.5% 2.5% 2.5%; }
+    padding: 2% 0 0 0; }
 
   .halfFromWrap {
     display: block;

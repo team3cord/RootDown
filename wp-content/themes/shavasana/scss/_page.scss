@@ -113,19 +113,47 @@
 //==================================================================
 
 .classesHero {
-	@include sizeEl(block, left, 100%, 300px);
-	background-color: $b;
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+	padding: 0 0 0 0;
+	z-index:-10;
+}
+
+.classHeroInner {
+	@include sizeEl(block, none, 100%, auto);
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	z-index:-100;
+}
+
+.classHeroInner div {
+	@include sizeEl(block, none, 100%, auto);
+	text-align: center;
+	padding: 5%;
+}
+
+.classHeroInner h1 {
+	font-size: 32px;
 }
 
 .classPrice {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 5% 5% 10% 5%;
+	padding: 2.5%;
 	position: relative;
 	z-index: 10;
+
 
 	color: $white;
 
 	background-color: $classesBlue;
+}
+
+.priceInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: #104e79;
+	padding: 2.5% 2.5% 6% 2.5%;
+	text-align: center;
 }
 
 .classPrice h3 {
@@ -206,19 +234,28 @@
 
 .specailClasses {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 2.5%;
 }
 
 .scWrapHalf {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 5%;
 	margin: 0 0 5% 0;
+	// padding: 2.5%;
 
 	background-color: $white;
 
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.scWrapHalf div {
+	padding: 5%;
 }
 
 //==================================================================
@@ -233,8 +270,19 @@
 // hero image
 .blogHero div{
 	@include sizeEl(block, none, 100%, 200px);
+	@include backgroundImg('blogHeader.jpg', no-repeat, top);
 	margin: 0 auto;
-	background-color: #ccc;
+	padding: 80px 0 0 0;
+}
+
+.blogHero div h2 {
+	color: $white;
+	text-align: right;
+	padding: 0 3.5% 0 0;
+}
+
+.blogHero div p {
+	display: none;
 }
 
 .blogNavWrap {
@@ -577,6 +625,23 @@
 }
 
 
+.callUs {
+	@include backgroundImg("contactBg.jpg",no-repeat, left center);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callUsWrap h2, .callUsWrap p, .callUsWrap ul, .callUsWrap a,
+.cNewsletterWrap h2, .cNewsletterWrap p {
+	color: $white;
+}
+
+.messageTitle {
+	color: $bPurple;
+}
+
 // .callUsWrap h2 {
 // 	text-shadow: 0 0 21px rgba(0,0,0,.85);
 // }
@@ -643,6 +708,29 @@
 
 	padding: 5%;
 }
+
+
+
+.blogCatNav li a {
+	@include backgroundImg("blogTeachSprite.png",no-repeat, 0px 0px);
+	overflow: hidden;
+	height: 49px;
+}
+
+.blogCatNav li a.bNavAngela    {background-position: right 5px;}
+.blogCatNav li a.bNavVictoria  {background-position: right -61px;}
+.blogCatNav li a.bNavChelsey   {background-position: right -135px;}
+.blogCatNav li a.bNavEleanor   {background-position: right -204px;}
+
+
+
+
+
+
+
+
+
+
 
 
 

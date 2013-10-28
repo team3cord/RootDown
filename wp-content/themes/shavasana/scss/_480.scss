@@ -9,7 +9,7 @@
 //==================================================================
 
 // all elements that change on resize will animate into place
-*{@include transAni(all 0.3s ease);}
+// *{@include transAni(all 0.3s ease);}
 
 // header
 
@@ -66,9 +66,10 @@
 // footer wrap
 .gFooter {
 	@include sizeEl(block, left, 100%, 180px);
-	@include backgroundImg('footBg.jpg', repeat-x, bottom);
+	@include backgroundImg('footBg.png', repeat-x, bottom);
 	position: relative;
 	overflow: hidden;
+	margin-top: - 90px;
 }
 
 // footer logo

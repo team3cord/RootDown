@@ -24,7 +24,7 @@
 // 	display: none;
 // }
 
-.pageWrap {
+#page {
 	background-color: #bada55;
 	display: block;
 	float: left;
@@ -34,7 +34,7 @@
 	position: relative;
 }
 
-.pageWrap:before {
+#page:before {
 	@include afterImg(100%, 190px, "bodyBg.jpg", repeat-x, top center);
 	position: absolute;
 	top: 365px;
@@ -251,6 +251,10 @@
 //	Global Footer
 //==================================================================
 
+.footerSlogan {
+	@include sizeEl(none, left, 100%, 275px);
+	@include backgroundImg('footSlogan.jpg', no-repeat, top center);
+}
 
 // footer wrap
 .gFooter {
@@ -308,7 +312,7 @@
 
 //gContent
 .gContent {
-	@include sizeEl(block, none, 100%, auto);
+	@include sizeEl(block, none, 100%, inherit);
 	max-width: 1200px;
 	position: relative;
 	z-index: 1;
