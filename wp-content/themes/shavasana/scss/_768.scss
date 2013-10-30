@@ -32,6 +32,78 @@
 	padding: 0 0 500px 0;
 }
 
+// home
+.indexHero div {
+	@include backgroundImg("indexHeader.jpg", no-repeat, right top);
+}
+
+
+.iAboutInner {
+	padding-bottom: 0 !important;
+}
+
+.iNewsLetter {
+	display: block !important;
+}
+
+
+.iAboutText {
+	@include sizeEl(block, left, 100%, 425px);
+	@include backgroundImg("iAboutPad.jpg", no-repeat, right top);
+	margin-top: -23px;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5% 5% 0 5%;
+	margin-bottom: 0 !important;
+}
+
+.iAboutText h2, .iAboutText p {
+	color: $white;
+}
+
+.iNewsLetter h2 {
+	margin-bottom: 10px;
+}
+
+.iNewsLetter {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 20px 0 0 0;
+}
+
+
+.iAboutTextInner {
+	@include sizeEl(block, left, 60%, auto);
+	padding: 40px 0 0 0;
+}
+
+.iAboutClass {
+	@include backgroundImg("iClassesPad.jpg", no-repeat, right top);
+	@include sizeEl(block, left, 100%, auto);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5%;
+	margin-bottom: 0 !important;
+}
+
+.iAboutClass h2, .iAboutClass p {
+	text-align: center;
+	color: $white;
+}
+
+.iClassPadBtn {
+	@include sizeEl(block, none, 89px, auto);
+	margin: 0 auto;
+}
+
+.iAboutClass a.btn {
+	margin: 0 auto;
+	float: none !important;
+}
+
 //==================================================================
 //	Global Elements
 //==================================================================
@@ -121,7 +193,7 @@
 }
 
 
-.blogHero {
+.gHeroWrap {
 	height: 385px;
 }
 
@@ -135,19 +207,18 @@
 
 
 // hero image
-.blogHero div{
+.gHeroWrap div{
 	@include sizeEl(block, none, 100%, 100%);
 	max-width: 1200px;
-	padding: 80px 0 0 0;
+	padding: 100px 2.5% 2.5% 2.5%;
 }
 
-.blogHero div h2 {
+.gHeroWrap div h2 {
 	font-size: 45px;
 }
 
-.blogHero div p {
-	@include sizeEl(block, right, 55%, 100%);
-	text-align: right;
+.gHeroWrap div p {
+	@include sizeEl(block, left, 55%, 100%);
 	color: $white;
 	padding: 20px 3.5% 0 0;
 }
@@ -304,12 +375,39 @@
 
 .teacherPicNav {
 	@include sizeEl(block, left, 127px, 88px);
-	@include backgroundImg("teacherNavBg.png",no-repeat, 0px 0px); 
+	@include backgroundImg("teacherNavBg.png",no-repeat, center); 
 
 	position: absolute;
 	top: 80%;
 	left: 4%;
 	z-index:20;
+}
+
+.teacherPicNav a {
+	@include sizeEl(block, none, 50%, 58px);
+	overflow: hidden;
+	text-indent: -99999px;
+	position: absolute;
+	z-index:-1;
+	top: 26px;
+}
+
+.tpvLinkLeft {
+	@include backgroundImg("picArrows.png",no-repeat, 0px 0px);
+	left: 4px;
+}
+
+.tpvLinkRight {
+	left: 84px;
+	@include backgroundImg("picArrows.png",no-repeat, 0px -58px);
+}
+
+.tpvLinkRight:hover {
+	left: 90px;
+}
+
+.tpvLinkLeft:hover {
+	left: -4px;
 }
 
 .tpnPopUp {
@@ -318,6 +416,21 @@
 	position:absolute;
 	top: -70px;
 	left: -18%;
+	color: $bGray;
+	opacity: 1;
+}
+
+.teacherPicNav:hover .tpnPopUp {
+	opacity: 0;
+}
+
+.tpnPopUp span {
+	@include sizeEl(block, left, 100%, 76px);
+	color: $bGray !important;
+	padding: 22px 20px 20px 20px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 
@@ -364,18 +477,21 @@
 
 .teacherNav {
 	@include sizeEl(block, left, 100%, auto);
+	position: relative;
 }
 
 .teacherNav ul {
 	@include sizeEl(block, none, 95%, 42px);
 	margin: 0 auto;
 	background-color: $white;
+	position: relative;
 }
 
 .teacherNav li {
 	@include sizeEl(block, left, 25%, auto);
 	text-align: center;
 	padding: 10px 0;
+	position: relative;
 }
 
 .teacherNav a {
@@ -385,6 +501,8 @@
 	font-size: 18px;
 	letter-spacing: 1px;
 	color: $bPurple;
+	position: relative;
+	z-index: 9999999;
 }
 
 

@@ -69,34 +69,34 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
 
-<!--     <link type="text/css" rel="stylesheet" href="css/menu1.css" /> -->
+    <!--     <link type="text/css" rel="stylesheet" href="css/menu1.css" /> -->
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <!-- Mobile Navagation --> 
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">Basic example</a></li>
-            <li><a href="horizontal-submenus.html">Horizontal sliding submenus example</a></li>
-            <li><a href="vertical-submenus.html">Vertical submenus example</a></li>
-            <li><a href="positions.html">Positioning the menu</a></li>
-            <li><a href="advanced.html">Advanced example</a></li>
-            <li><a href="onepage.html">One page scrolling example</a></li>
-            <li><a href="iconbar.html">Iconbar</a></li>
-            <li class="Selected"><a href="dragopen.html">Drag/swipe the menu open</a></li>
-        </ul>
-    </nav>
+<!-- Mobile Navagation -->
+<nav id="menu">
+    <ul>
+        <li><a href="index.html">Basic example</a></li>
+        <li><a href="horizontal-submenus.html">Horizontal sliding submenus example</a></li>
+        <li><a href="vertical-submenus.html">Vertical submenus example</a></li>
+        <li><a href="positions.html">Positioning the menu</a></li>
+        <li><a href="advanced.html">Advanced example</a></li>
+        <li><a href="onepage.html">One page scrolling example</a></li>
+        <li><a href="iconbar.html">Iconbar</a></li>
+        <li class="Selected"><a href="dragopen.html">Drag/swipe the menu open</a></li>
+    </ul>
+</nav>
 
 
-    <!-- =========================== | GLOBAL PAGE WRAP | =========================== -->
-    <!-- everything has to live inside of the page wrap for the mobile menu to work correctly -->
-    <div id="page">
+<!-- =========================== | GLOBAL PAGE WRAP | =========================== -->
+<!-- everything has to live inside of the page wrap for the mobile menu to work correctly -->
+<div id="page">
 
 
 
@@ -197,18 +197,38 @@
 
                     <div class="teacherCustomPic">
 
-                        <div id="techAngela teachActive" class="teacherImgs">
-                            <img src="img/theacherPics/startAngela.png">
+                        <div id="techAngela" class="teacherImgs">
+                            <img src="img/theacherPics/startAngela.png" class="startImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                        </div>
+
+                        <div id="techVic" class="teacherImgs notActive">
+                            <img src="img/theacherPics/startVic.png" class="startImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                        </div>
+
+                        <div id="techChels" class="teacherImgs notActive">
+                            <img src="img/theacherPics/startChels.png" class="startImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                        </div>
+
+                        <div id="techEl" class="teacherImgs notActive">
+                            <img src="img/theacherPics/startEl.png" class="startImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
+                            <img src="img/theacherPics/startAngela.png" class="nonActiveImg">
                         </div>
 
                     </div>
 
                     <nav class="teacherNav" id="teacherNav">
                         <ul>
-                            <li><a href="#">Angela</a></li>
-                            <li><a href="#">Victoria</a></li>
-                            <li><a href="#">Chelsey</a></li>
-                            <li><a href="#">elanor</a></li>
+                            <li><a href="#" id="angelaLink" data-teacher="angela">Angela</a></li>
+                            <li><a href="#" id="vicLink" data-teacher="vic">Victoria</a></li>
+                            <li><a href="#" id="chelsLink" data-teacher="chels">Chelsey</a></li>
+                            <li><a href="#" id="elLink" data-teacher="elanor">elanor</a></li>
                         </ul>
                     </nav>
 
@@ -219,7 +239,7 @@
                     </div>
 
                     <!-- =========================== | Angela | =========================== -->
-                    <section class="angelaW teacher">
+                    <section class="angelaW teacher" id="angela">
                         <div class="teacherTextWrap">
                             <img src="img/theacherPics/mAngela.jpg" class="mobileTeccherImg">
                             <div class="ttwInner">
@@ -233,11 +253,11 @@
                     <!-- =========================== | !!!END Angela| =========================== -->
 
                     <!-- =========================== | Angela | =========================== -->
-                    <section class="victoriaW teacher notActive">
+                    <section class="victoriaW teacher notActive" id="vic">
                         <div class="teacherTextWrap">
                             <img src="img/theacherPics/mVic.jpg" class="mobileTeccherImg">
                             <div class="ttwInner">
-                                <h2>Angela Logan</h2>
+                                <h2>Vic</h2>
                                 <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
                                 <a href="#" class="btn">Learn More</a>
                                 <a href="#" class="btn btnPurp Share"><i class="icon-plus"></i>Share</a>
@@ -247,11 +267,11 @@
                     <!-- =========================== | !!!END Angela| =========================== -->
 
                     <!-- =========================== | Angela | =========================== -->
-                    <section class="chelseyW teacher notActive">
+                    <section class="chelseyW teacher notActive" id="chels">
                         <div class="teacherTextWrap">
                             <img src="img/theacherPics/mChels.jpg" class="mobileTeccherImg">
                              <div class="ttwInner">
-                                <h2>Angela Logan</h2>
+                                <h2>Chels</h2>
                                 <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
                                 <a href="#" class="btn">Learn More</a>
                                 <a href="#" class="btn btnPurp Share"><i class="icon-plus"></i>Share</a>
@@ -261,11 +281,11 @@
                     <!-- =========================== | !!!END Angela| =========================== -->
 
                     <!-- =========================== | Angela | =========================== -->
-                    <section class="elanorW teacher notActive">
+                    <section class="elanorW teacher notActive" id="elanor">
                         <div class="teacherTextWrap">
                             <img src="img/theacherPics/mEl.jpg" class="mobileTeccherImg">
                              <div class="ttwInner">
-                                <h2>Angela Logan</h2>
+                                <h2>El</h2>
                                 <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
                                 <a href="#" class="btn">Learn More</a>
                                 <a href="#" class="btn btnPurp Share"><i class="icon-plus"></i>Share</a>
@@ -342,12 +362,13 @@
         <!-- =========================== | END GLOBAL FOOTER | =========================== -->
 
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
-    <!-- MENU SCRIPS -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script>
-    <script type="text/javascript" src="js/mmenu.min.js"></script>
+<!-- MENU SCRIPS -->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script>
+<script type="text/javascript" src="js/mmenu.min.js"></script>
 
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
