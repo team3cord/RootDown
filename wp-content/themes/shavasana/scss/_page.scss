@@ -13,119 +13,247 @@
 */
 
 
+.nonActiveImg {display:none;}
+
+// blog hero
+.gHeroWrap {
+	@include sizeEl(block, left, 100%, 200px);
+}
+
+// hero image
+.gHeroWrap div {
+	@include sizeEl(block, none, 100%, 200px);
+	//@include backgroundImg('blogHeader.jpg', no-repeat, top);
+	margin: 0 auto;
+	padding: 80px 2.5% 0 2.5%;
+}
+
+.gHeroWrap div h2 {
+	color: $white;
+	padding: 0 3.5% 0 0;
+}
+
+.gHeroWrap div p {
+	display: none;
+}
 
 
 //==================================================================
 //	Home Page
 //==================================================================
 
+.indexHero div {
+	@include backgroundImg("mIndexHeader.jpg", no-repeat, right top);
+}
 
-// About tout
+// // About tout
+// .iAbout {
+// 	@include sizeEl(block, left, 100%, 550px);
+// 	// @include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
+// 	// -moz-background-size: 100% 465px;
+//  //    	background-size: 100% 465px;
+
+// 	// padding: 2.5%;
+
+// 	color: $white;
+// }
+
+// // about title 
+// .iAbout h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// // about tout
+// .iAboutText {
+// 	@include sizeEl(block, left, 100%, 275px);
+// 	padding: 5%;
+// }
+
+// // newsletter tout
+// .iAboutText div {display:none;}
+
+// // classes
+// .iAboutClass {
+// 	@include sizeEl(block, left, 100%, 275px);
+
+// 	padding: 5%;
+// 	margin: 0 !important;
+
+// 	color: $white;
+// 	text-align: right;
+// }
+
+// .iYogaAk {
+// 	@include sizeEl(block, left, 100%, 600px);
+// }
+
+// .iYogaKid {
+// 	@include sizeEl(block, left, 100%, 325px);
+// 	@include backgroundImg('mHomeSprite.jpg', no-repeat, right -600px);
+
+// 	padding: 5%;
+
+// 	color: $white;
+// }
+
+// .iYogaKid h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// .iYogaKid .btn {
+// 	margin: 0 15px 0 0;
+// }
+
+// .iYogaAdult {
+// 	@include sizeEl(block, left, 100%, 275px);
+// 	@include backgroundImg('mHomeSprite.jpg', no-repeat, left -925px);
+
+// 	padding: 5%;
+
+// 	color: $white;
+// 	text-align: right;
+// }
+
+// .iYogaAdult h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// .iYogaAdult .btn {
+// 	margin: 0 0 0 15px;
+// }
+
+// .snapG, .iBlogWrap, .iInstaWrap {
+// 	display: none;
+// }
+
+
 .iAbout {
-	@include sizeEl(block, left, 100%, 550px);
-	// @include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
-	// -moz-background-size: 100% 465px;
- //    	background-size: 100% 465px;
-
-	// padding: 2.5%;
-
-	color: $white;
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
 }
 
-// about title 
-.iAbout h2 {
-	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
-	color: $white;
-	padding: 15px 0 15px 0;
+.iAboutInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0 0 20px 0;
 }
 
-// about tout
 .iAboutText {
-	@include sizeEl(block, left, 100%, 275px);
-	@include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	padding: 5%;
+	margin-bottom: 20px;
+}
+
+.iAboutClass {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
 	padding: 5%;
 }
 
-// newsletter tout
-.iAboutText div {display:none;}
+.iNewsLetter {
+	display: none !important;
+}
 
-// classes
-.iAboutClass {
-	@include sizeEl(block, left, 100%, 275px);
-	@include backgroundImg('mHomeSprite.jpg', no-repeat, 0px -275px);
-
-	padding: 5%;
-	margin: 0 !important;
-
-	color: $white;
-	text-align: right;
+.iNewsBtn {
+	margin: -35px 0 0 0;
+	max-height:34px;
 }
 
 .iYogaAk {
-	@include sizeEl(block, left, 100%, 600px);
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
 }
 
-.iYogaKid {
-	@include sizeEl(block, left, 100%, 325px);
-	@include backgroundImg('mHomeSprite.jpg', no-repeat, right -600px);
+.iYogaKid, .iYogaAdult {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
 
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
 	padding: 5%;
-
-	color: $white;
+	margin-bottom: 20px;	
 }
 
-.iYogaKid h2 {
-	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
-	color: $white;
-	padding: 15px 0 15px 0;
+.iBlogWrap {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	margin-bottom: 20px;	
 }
 
-.iYogaKid .btn {
-	margin: 0 15px 0 0;
+.iBlogWrap img {width: 100%;}
+
+.iBlogWrap div {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5%;	
 }
 
-.iYogaAdult {
-	@include sizeEl(block, left, 100%, 275px);
-	@include backgroundImg('mHomeSprite.jpg', no-repeat, left -925px);
-
-	padding: 5%;
-
-	color: $white;
-	text-align: right;
-}
-
-.iYogaAdult h2 {
-	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
-	color: $white;
-	padding: 15px 0 15px 0;
-}
-
-.iYogaAdult .btn {
-	margin: 0 0 0 15px;
-}
-
-.snapG, .iBlogWrap, .iInstaWrap {
-	display: none;
-}
+.iInstaWrap {display: none;}
 
 //==================================================================
 //	Classes Page
 //==================================================================
 
 .classesHero {
-	@include sizeEl(block, left, 100%, 300px);
-	background-color: $b;
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+	padding: 0 0 0 0;
+	z-index:-10;
+}
+
+.classHeroInner {
+	@include sizeEl(block, none, 100%, auto);
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	z-index:-100;
+}
+
+.classHeroInner div {
+	@include sizeEl(block, none, 100%, auto);
+	text-align: center;
+	padding: 5%;
+}
+
+.classHeroInner h1 {
+	font-size: 32px;
 }
 
 .classPrice {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 5% 5% 10% 5%;
+	padding: 2.5%;
 	position: relative;
 	z-index: 10;
+
 
 	color: $white;
 
 	background-color: $classesBlue;
+}
+
+.priceInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: #104e79;
+	padding: 2.5% 2.5% 6% 2.5%;
+	text-align: center;
 }
 
 .classPrice h3 {
@@ -206,36 +334,33 @@
 
 .specailClasses {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 2.5%;
 }
 
 .scWrapHalf {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 5%;
 	margin: 0 0 5% 0;
+	// padding: 2.5%;
 
 	background-color: $white;
 
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.scWrapHalf div {
+	padding: 5%;
 }
 
 //==================================================================
 //	Blog Index
 //==================================================================
-
-// blog hero
-.blogHero {
-	@include sizeEl(block, left, 100%, 200px);
-}
-
-// hero image
-.blogHero div{
-	@include sizeEl(block, none, 100%, 200px);
-	margin: 0 auto;
-	background-color: #ccc;
-}
 
 .blogNavWrap {
 	@include sizeEl(block, left, 100%, auto);
@@ -577,6 +702,23 @@
 }
 
 
+.callUs {
+	@include backgroundImg("contactBg.jpg",no-repeat, left center);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callUsWrap h2, .callUsWrap p, .callUsWrap ul, .callUsWrap a,
+.cNewsletterWrap h2, .cNewsletterWrap p {
+	color: $white;
+}
+
+.messageTitle {
+	color: $bPurple;
+}
+
 // .callUsWrap h2 {
 // 	text-shadow: 0 0 21px rgba(0,0,0,.85);
 // }
@@ -606,7 +748,9 @@
 }
 
 
-
+.teacherCustomPic {
+	display: none;
+}
 
 
 .teacherNav {
@@ -643,6 +787,29 @@
 
 	padding: 5%;
 }
+
+
+
+.blogCatNav li a {
+	@include backgroundImg("blogTeachSprite.png",no-repeat, 0px 0px);
+	overflow: hidden;
+	height: 49px;
+}
+
+.blogCatNav li a.bNavAngela    {background-position: right 5px;}
+.blogCatNav li a.bNavVictoria  {background-position: right -61px;}
+.blogCatNav li a.bNavChelsey   {background-position: right -135px;}
+.blogCatNav li a.bNavEleanor   {background-position: right -204px;}
+
+
+
+
+
+
+
+
+
+
 
 
 
