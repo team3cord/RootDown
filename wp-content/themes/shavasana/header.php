@@ -39,7 +39,7 @@
     <meta name="ICBM" content="45.70896, -121.512487" />
 
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <script src="js/selectivizr-min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>js/selectivizr-min.js"></script>
     <![endif]-->
 
     <!-- Icons -->
@@ -94,13 +94,13 @@
     <!-- Mobile Navagation --> 
     <nav id="menu">
         <ul>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/index.php">Basic example</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/horizontal-submenus.html">Horizontal sliding submenus example</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/vertical-submenus.html">Vertical submenus example</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/positions.html">Positioning the menu</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/advanced.html">Advanced example</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/onepage.html">One page scrolling example</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/iconbar.html">Iconbar</a></li>
+            <li><a href="<?php echo get_permalink(9); ?>"><span>Home</span></a></li>
+            <li><a href="<?php echo get_permalink(7); ?>"><span>About</span></a></li>
+            <li><a href="<?php echo get_permalink(11); ?>"><span>Classes</span></a></li>
+            <!--<li><a href="<?php echo get_permalink(13); ?>"><span>Workshops</span></a></li>-->
+            <li><a href="<?php echo get_permalink(15); ?>"><span>Blog</span></a></li>
+            <li><a href="<?php echo get_permalink(17); ?>"><span>Contact</span></a></li>
+
             <li class="Selected"><a href="<?php echo get_template_directory_uri(); ?>/dragopen.html">Drag/swipe the menu open</a></li>
         </ul>
     </nav>
@@ -145,12 +145,12 @@
             <section class="fullWrap gNavWrap">
                 <nav class="gNav mid">
                     <ul>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/index.php"><span>Home</span></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/about.html"><span>About</span></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/classes.html"><span>Classes</span></a></li>
-                    <!--<li><a href="<?php echo get_template_directory_uri(); ?>/workshops.html"><span>Workshops</span></a></li>-->
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/blogIndex.html"><span>Blog</span></a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/contact.html"><span>Contact</span></a></li>
+                        <li><a href="<?php echo get_permalink(9); ?>"><span>Home</span></a></li>
+                        <li><a href="<?php echo get_permalink(7); ?>"><span>About</span></a></li>
+                        <li><a href="<?php echo get_permalink(11); ?>"><span>Classes</span></a></li>
+                    <!--<li><a href="<?php echo get_permalink(13); ?>"><span>Workshops</span></a></li>-->
+                        <li><a href="<?php echo get_permalink(15); ?>"><span>Blog</span></a></li>
+                        <li><a href="<?php echo get_permalink(17); ?>"><span>Contact</span></a></li>
                     </ul>
                 </nav>
             </section>

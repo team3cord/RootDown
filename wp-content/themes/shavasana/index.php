@@ -1,24 +1,21 @@
 <?php
-/**
-
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
+/*
+Template Name: HOME Page
+*/
 
 get_header(); ?>
 
-
+<div style="width: 100%; height: 500px; background: #FF00FF;"><H1>This global hero is broken??</H1></div>
         <!-- =========================== | GLOBAL HERO WRAP | =========================== -->
-        <section class="gHeroWrap homeHero fullWrap">
+<!-- <section class="gHeroWrap homeHero fullWrap">
 
-                <!-- Global Hero | Main image / video / slider after header -->
-                <section class="gHero full">
-                    <div><img src="http://placehold.it/1200x550&text=Image / Video / Slider"></div>
-                </section>
-                <!-- !!!END GLOBAL HERO -->
+    <!-- Global Hero | Main image / video / slider after header -->
+<!--    <section class="gHero full">
+       <div><img src="http://placehold.it/1200x550&text=Image / Video / Slider"></div>
+   </section>
+   <!-- !!!END GLOBAL HERO -->
 
-        </section>
+<!-- </section>
         <!-- ========================= | !!!END GLOBAL HERO WRAP | ========================= -->
 
 
