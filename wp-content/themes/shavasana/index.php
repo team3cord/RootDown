@@ -97,26 +97,31 @@ get_header(); ?>
 
                     <div class="iBlog">
 
+                        <!-- THE LOOP -->
+                <?php
+
+
+                    $args = array( 'posts_per_page' => 2, 'category' => 4 );
+                                // GET TWO POSTS FROM FEATURED CATEGORY
+                    $myposts = get_posts( $args );
+                    
+                    foreach ( $myposts as $post ) : setup_postdata( $post ); ?>        
+
                         <section class="iBlogWrap iFirstBlog">
-                            <img src="http://placehold.it/350x150">
+                            <img src="http://placehold.it/350x150"><?//php the_post_thumbnail( $size, $attr ); ?>
+                            
                             <div>
-                                <h2>Post Name Here</h2>
-                                <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
-                                <a href="#" class="btn">Learn More</a>
+                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+                                <p><?php the_excerpt(); ?></p>
+
+                                <a href="<?php the_permalink(); ?>" class="btn">Learn More</a>
                                 <a href="#" class="btn btnPurp Share">Share</a>
                             </div>
                         </section>
+                                <?php endforeach; 
+                                    wp_reset_postdata();?>
 
-
-                        <section class="iBlogWrap iSecondBlog">
-                            <img src="http://placehold.it/350x150">
-                            <div>
-                                <h2>Post Name Here</h2>
-                                <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
-                                <a href="#" class="btn">Learn More</a>
-                                <a href="#" class="btn btnPurp Share">Share</a>
-                            </div>
-                        </section>
 
                     </div>
 

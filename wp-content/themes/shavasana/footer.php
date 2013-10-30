@@ -43,7 +43,7 @@
                             <li><a href="<?php echo get_permalink(7); ?>">About</a></li>
                             <li><a href="<?php echo get_permalink(11); ?>">Classes</a></li>
                             <li><a href="<?php echo get_permalink(13); ?>">Workshops</a></li>
-                            <li><a href="<?php echo get_permalink(15); ?>">Blog</a></li>
+                            <li><a href="<?php echo get_permalink(40); ?>">Blog</a></li>
                             <li><a href="<?php echo get_permalink(17); ?>">Contact</a></li>
                         </ul>
                     </nav>

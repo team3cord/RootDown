@@ -98,7 +98,7 @@
             <li><a href="<?php echo get_permalink(7); ?>"><span>About</span></a></li>
             <li><a href="<?php echo get_permalink(11); ?>"><span>Classes</span></a></li>
             <!--<li><a href="<?php echo get_permalink(13); ?>"><span>Workshops</span></a></li>-->
-            <li><a href="<?php echo get_permalink(15); ?>"><span>Blog</span></a></li>
+            <li><a href="<?php echo get_permalink(40); ?>"><span>Blog</span></a></li>
             <li><a href="<?php echo get_permalink(17); ?>"><span>Contact</span></a></li>
 
             <li class="Selected"><a href="<?php echo get_template_directory_uri(); ?>/dragopen.html">Drag/swipe the menu open</a></li>
@@ -149,7 +149,7 @@
                         <li><a href="<?php echo get_permalink(7); ?>"><span>About</span></a></li>
                         <li><a href="<?php echo get_permalink(11); ?>"><span>Classes</span></a></li>
                     <!--<li><a href="<?php echo get_permalink(13); ?>"><span>Workshops</span></a></li>-->
-                        <li><a href="<?php echo get_permalink(15); ?>"><span>Blog</span></a></li>
+                        <li><a href="<?php echo get_permalink(40); ?>"><span>Blog</span></a></li>
                         <li><a href="<?php echo get_permalink(17); ?>"><span>Contact</span></a></li>
                     </ul>
                 </nav>

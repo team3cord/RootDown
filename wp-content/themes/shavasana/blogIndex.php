@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: BLOG INDEX Page
+Template Name: GORGE POWER YOGA Page
 */
 
 get_header(); ?>
