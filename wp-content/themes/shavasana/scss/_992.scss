@@ -212,8 +212,23 @@
 	padding: 0 5% 0 5%;
 }
 
+.iBlogWrap {
+	position: relative;
+}
+
+.iBlogWrap .btn {
+	position: relative;
+	z-index: 1000;
+}
+
+.iBlogWrap:after{
+	@include afterImg(100%, 75px, "iBlogAfter.png", no-repeat, center);
+	bottom: -8px;
+} 
+
 .iInstagram {
-	@include sizeEl(block, right, 100%, 500px);
+	@include sizeEl(block, right, 100%, auto);
+	padding-bottom: 5%;
 }
 
 .iInstaWrap {
@@ -239,5 +254,6 @@
 	float: left;
 	padding: 0px !important;
 	margin: 0px;
+	width: 14.2857143% !important;
 }
 
