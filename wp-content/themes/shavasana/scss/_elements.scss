@@ -57,6 +57,8 @@
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
 	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	position:relative;
+	z-index:99999999;
 }
 
 // fixes the pos on the header socail els to be realitive

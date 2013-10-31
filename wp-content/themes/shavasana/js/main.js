@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-
-=======
 $(function() {
-    $('nav#menu').mmenu({
-        dragOpen: true
-    });
+    $('nav#menu').mmenu({});
 
 
     // Teacher Scripts
@@ -32,4 +27,3 @@ $(function() {
     });
 
 });
->>>>>>> 0195dc5ffbb98d4b46870f8211157f1708ec2f2f

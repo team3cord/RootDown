@@ -1,0 +1,15 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/caleb\/Desktop\/RootDownFix\/scss\/_1200\.scss}line{font-family:\0000314}}
+.gFacebook {
+  display: block;
+  left: 0px;
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/caleb\/Desktop\/RootDownFix\/scss\/_1200\.scss}line{font-family:\0000321}}
+.gInstagram {
+  display: block;
+  right: 0px;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/caleb\/Desktop\/RootDownFix\/scss\/_1200\.scss}line{font-family:\0000328}}
+.gFacebook:after, .gInstagram:after {
+  display: block; }

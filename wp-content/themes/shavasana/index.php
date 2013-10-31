@@ -8,8 +8,9 @@ get_header(); ?>
         <!-- =========================== | GLOBAL HERO WRAP | =========================== -->
        <section class="gHeroWrap indexHero fullWrap" id="indexVideo">
             <div>
-                <h2>Root Down Index</h2>
-                <p>Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus.</p>
+                <h2>Join Us for Practice</h2>
+                <a href="#" class="btn btnPurp Share">Watch Video</a>
+                <a href="#" class="btn">Sign Up</a>
             </div>
         </section>
         <!-- ========================= | !!!END GLOBAL HERO WRAP | ========================= -->
@@ -66,7 +67,7 @@ get_header(); ?>
                     </div>
                     <div class="iAboutClass">
                         <h2>Yoga Classes</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. get lacinia odio sem nec elit.</p>
+                        <p>Our classes are intended for all levels of practice. We offer a diverse schedule that focuses on connecting movement with breath.</p>
                         <span class="iClassPadBtn">
                             <a href="#" class="btn">Learn More</a>
                         </span>
@@ -84,14 +85,14 @@ get_header(); ?>
                     <div class="iYogaKid">
                         <h2>Yoga for Kids</h2>
                         <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
-                        <a href="#" class="btn learnMore">Learn More</a>
-                        <a href="#" class="btn">View Schedule</a>
+                        <!--<a href="#" class="btn learnMore">Learn More</a>
+                        <a href="#" class="btn">View Schedule</a>-->
                     </div>
 
                     <div  class="iYogaAdult">
                         <h2>Yoga for Adults</h2>
                         <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
-                        <a href="#" class="btn learnMore">Learn More</a>
+                        <!--<a href="#" class="btn learnMore">Learn More</a>-->
                         <a href="#" class="btn">View Schedule</a>
                     </div>
 
@@ -152,7 +153,7 @@ get_header(); ?>
         <div>
         <!-- =========================== | !!!END CONTENT WRAP | =========================== -->
 
-
+        </div>
     </div>
     <!-- =========================== | !!!END GLOBAL PAGE WRAP | =========================== -->
 

@@ -1,0 +1,30 @@
+//========================================================================// 
+	                                                                   //
+		// _1200.scss                		                        //     1200
+	                                                                 //
+//====================================================================//
+
+
+//==================================================================
+//	Global Elements
+//==================================================================
+
+// header social
+
+.gFacebook {
+	display: block;
+	left: 0px;
+	text-align: right;
+}
+
+// header instagram
+.gInstagram {
+	display: block;
+	right: 0px;
+	text-align: left;
+}
+
+// grunge background
+.gFacebook:after, .gInstagram:after {display: block;}
+
+

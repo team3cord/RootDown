@@ -43,6 +43,10 @@
 	@include sizeEl(block, left, 48.5%, auto);
 }
 
+.iBlog {
+	padding: 0 !important;
+}
+
 .iSecondBlog {
 	float: right !important;
 }
@@ -124,7 +128,7 @@
 
 .classesTextWrap {
 	@include sizeEl(block, left, 50%, auto);
-	border-left: solid 1px $classBorder;
+/*	border-left: solid 1px $classBorder;*/
 	border-right: solid 1px $classBorder;
 	padding: 2.5%;
 }

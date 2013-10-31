@@ -1,0 +1,373 @@
+//======================================================================// 
+                                                                       //
+     // _elements.scss              		                           
+		                                                     		 //-----[ ELEMENTS 
+//==================================================================// 
+
+   
+       
+/*  
+    
+    This file defines global elements
+    All global parent elements should have global name syntacts EX: gName
+
+*/
+
+
+
+//==================================================================
+//	Global Elements
+//==================================================================
+
+
+// .nonM {
+// 	display: none;
+// }
+
+#page {
+	background-color: #bada55;
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto !important;
+	background-image:url(../img/bg.jpg);
+	position: relative;
+}
+
+#page:before {
+	@include afterImg(100%, 190px, "bodyBg.jpg", repeat-x, top center);
+	position: absolute;
+	top: 365px;
+	background-color: #bada55;
+	z-index: 0;
+}
+
+
+
+//==================================================================
+//	Global Header
+//==================================================================
+
+// header wrap
+.gHeader {
+	@include sizeEl(block, left, 100%, 64px);
+	@include backgroundImg('mHeaderBg.jpg', repeat-x, top);
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+// fixes the pos on the header socail els to be realitive
+.gHeader section { position: relative; }
+
+
+//===========================================// Branding
+
+//===========// || TODO THIS NEEDS TO BE SVG
+
+.staticLogo {
+	@include sizeEl(block, none, 100%, 58px);
+	position: absolute;
+	top: -3px;
+}
+
+.staticLogo img {
+	@include sizeEl(block, none, 167px, 35px);
+	margin: 17px auto;
+}
+
+//==========//
+
+// nav icon
+.navIcon {
+	@include sizeEl(block, none, 30px, 30px);
+	position: absolute;
+	z-index: 9999;
+
+	top: 18px;
+	left: 5%;
+
+	font-size: 25px;
+	color: $bPurple;
+	text-decoration: none;
+}
+
+//===========================================// Socail
+
+// header social
+.gSocial {
+	@include sizeEl(none, none, 32%, 61px);
+	position: absolute;
+	padding: 35px 0 0 0;
+
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: $navLinkColor;
+}
+
+.gSocial:hover {
+	text-decoration: none;
+}
+
+// grunge background
+.gFacebook:after {
+	@include spritePos('sprite.png', 0px 0px);
+	@include afterImg(50%, 61px, 'socialGrungeLeft.png', no-repeat, top right);
+	top: 15px;
+	left: 0px;
+}
+
+
+// grunge background
+.gInstagram:after {
+	@include spritePos('sprite.png', 0px 0px);
+	@include afterImg(50%, 61px, 'socialGrungeRight.png', no-repeat, top left);
+	top: 15px;
+	right: 0px;
+}
+
+//===========================================// Nav
+
+.gNav {
+	@include sizeEl(none, none, 100%, 50px);
+	margin: 95px auto 0 auto;
+}
+
+/*
+	-------------------------------------------------- 
+	* Global Nav ul, li, a
+	-------------------------------------------------- 
+
+	1  | Position absolute to make children els realative to this
+	
+	2  | Give width of 16.6666667% to all list items for fuild width.
+	   | Width of the li is created by dividing the width of the ul (100%) by the amount of li inside (6)
+	   | 100 / 6 gives us our width of our list items | width = 16.6666667%
+	   --------------------------------------------------------------------------------------------------
+
+	3  | Make list items realative to the ul so you can vertically center <a> els inside
+
+	4  | Posistion <a> els absolute and give them a top postion of 25% and this will center them
+*/
+
+// nav ul
+.gNav ul {
+	display: none;
+	width: 100%;
+	max-width: 1200px;
+	height: 60px;
+
+	position: absolute; //----- 1
+}
+
+// nav list items
+.gNav ul li {
+	display: none;
+	float:left;
+	width: 20%; //----- 2
+	height: 50%;
+
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	position: relative; //----- 3
+
+}
+
+// nav links
+.gNav ul li a {
+	display:none;
+	float: left;
+	width: 100% !important;
+	height: 50%;
+	padding: 5px 0;
+
+	position: absolute;
+	top: 25%; //----- 4
+
+	text-align: center;
+	color: $navLinkColor;
+	text-decoration: none;
+
+}
+
+// remove underline on hover
+.gNav ul li a:hover {
+	text-decoration: none;
+}
+
+// span is used for the animation
+.gNav ul li a span {
+	display: block;
+	width: 100% !important;
+	height: 20px;
+
+	font-size: 13px;
+
+	// scaling animation
+	@include ani3dScale(0.9, 0.9, 1);
+	//-webkit-transform: scale3d(0.8, 0.8, 1);
+
+	// easing and time animation
+	@include transAni(all 0.3s ease);
+}
+
+// hover animation
+.gNav ul li a:hover span {
+	@include ani3dScale(1, 1, 1);
+}
+
+// This is the boder image after the links
+.gNav ul li a:after {
+	@include afterImg(1px, 45px, "navDiv.png", no-repeat, 0px 0px);
+	top: -8px;
+}
+
+// remove the first border
+.gNav ul li:first-child a:after {
+	@include afterImg(0px, 45px, "navDiv.png", no-repeat, 0px 0px);
+	top: -8px;
+}
+
+
+//==================================================================
+//	Global Hero
+//==================================================================
+
+.gHeroWrap {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2 !important;
+}
+
+
+
+//==================================================================
+//	Global Footer
+//==================================================================
+
+.footerSlogan {
+	@include sizeEl(none, left, 100%, 275px);
+	@include backgroundImg('footSlogan.jpg', no-repeat, top center);
+}
+
+// footer wrap
+.gFooter {
+	@include sizeEl(block, left, 100%, 365px);
+	@include backgroundImg('mfootHead.jpg', repeat-x, top);
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+}
+
+// mobile logo
+.gFooter h1 {
+	@include sizeEl(block, left, 100%, 70px);
+	@include backgroundImg('mFootLogo.png', no-repeat, center 20px);
+
+	overflow: hidden;
+
+	text-indent: -999999px;
+}
+
+// foot utlity 
+.footUtility {
+	display: none;
+}
+
+// foot leags
+.footLegal {
+	display: none;
+}
+
+.footLegal span{
+	font-size: 10px;
+}
+
+
+.footNav {
+	@include sizeEl(block, left, 100%, 100%);
+}
+
+.footNav li {
+	@include sizeEl(block, left, 105%, 50px);
+	@include backgroundImg('mFootLinkBg.jpg', repeat-x, center);
+	padding: 2px 0 0 0;
+}
+
+.footNav a {
+	text-decoration: none;
+	color: $navLinkColor;
+	padding: 0 2.5%;
+}
+
+//==================================================================
+//	Global Content
+//==================================================================
+
+//gContent
+.gContent {
+	@include sizeEl(block, none, 100%, inherit);
+	max-width: 1200px;
+	position: relative;
+	z-index: 1;
+}
+
+// chinese back ground
+.gContent:before, .gContent:after {
+	display: none;
+}
+
+// featured tout wrap
+.ftw {
+	@include sizeEl(block, left, 100%, inherit);
+	background-color: $white;
+	-webkit-box-shadow: 0 0 35px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 0 35px rgba(0,0,0,.05);
+	box-shadow: 0 0 35px rgba(0,0,0,.05);
+	position: relative;
+	//margin: -20px 2.5% 0 2.5%;
+	z-index: 10 !important;
+	padding: 2.5%;
+}
+
+// // ripped paper top
+// .ftw:before {
+// 	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -61px);
+// 	max-width: 1200px;
+// 	top: -15px;
+// }
+
+// // ripped paper bottom
+// .ftw:after {
+// 	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -112px);
+// 	max-width: 1200px;
+// 	bottom: -15px;
+// }
+
+.adWrap {
+	@include sizeEl(block, left, 50%, 325px);
+	position: relative;
+	z-index: 1;
+
+	// background-color: #ccc;
+}
+
+// this is the mind body schedule wrap
+.shedWrap {
+	padding: 20px 2.5%;
+	position: relative;
+	z-index: 99999;
+}
+
+// header ing the schedule wrap
+.shedWrap h2 {
+	color: $bPurple;
+}
+
+

@@ -1,0 +1,136 @@
+//========================================================================// 
+	                                                                   //
+		// _600.scss                		                        //     600
+	                                                                 //
+//====================================================================//
+
+
+// home
+
+.iAboutInner {
+	@include sizeEl(block, left, 100%, auto);
+
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	padding: 0 0 20px 0;
+}
+
+.iAboutText {
+	@include sizeEl(block, left, 50%, auto);
+	background-color: transparent;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5%;
+}
+
+
+.iAboutClass {
+	@include sizeEl(block, left, 50%, auto);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5%;
+}
+
+.iBlogWrap {
+	@include sizeEl(block, left, 48.5%, auto);
+}
+
+.iSecondBlog {
+	float: right !important;
+}
+
+
+// ripped paper top
+.ftw:before {
+	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -61px);
+	max-width: 1200px;
+	top: -15px;
+}
+
+// ripped paper bottom
+.ftw:after {
+	@include afterImg(100%, 52px, "sprite.png", no-repeat, 0px -112px);
+	max-width: 1200px;
+	bottom: -15px;
+}
+
+
+.priceCol1 {
+	@include sizeEl(block, left, 50%, auto);
+}
+
+.priceCol2 {
+	@include sizeEl(block, left, 50%, auto);
+}
+
+// about
+
+// About
+
+.teacher {
+		@include sizeEl(block, left, 50%, auto);
+		padding: 2.5%;
+
+}
+
+
+.teacherTextWrap {
+		@include sizeEl(block, left, 100%, auto);
+}
+
+// .teachRightPad {
+// 	float: right;
+// }
+
+
+
+
+
+
+
+.blogPost {
+	@include sizeEl(block, left, 48%, auto);
+}
+
+// this is the ipad right
+.rightPad {
+	float: right !important;
+}
+
+
+
+// classes
+
+.classPrice {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 1.5%;
+}
+
+.priceInner {
+	@include sizeEl(block, left, 100%, auto);
+	max-height: 309px;
+	@include backgroundImg("priceBg.jpg",no-repeat,center);
+	padding: 2.5%;
+	border: solid 1px #187aaa;
+}
+
+.classesTextWrap {
+	@include sizeEl(block, left, 50%, auto);
+	border-left: solid 1px $classBorder;
+	border-right: solid 1px $classBorder;
+	padding: 2.5%;
+}
+
+.classesInner {
+	@include backgroundImg("classesBg.jpg",no-repeat,bottom center);
+	background-color: #000000;
+	padding-bottom: 200px;
+}

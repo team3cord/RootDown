@@ -1,0 +1,644 @@
+//========================================================================// 
+	                                                                     //
+		// _768.scss                		                            //     768
+	                                                                   //
+//====================================================================//
+
+// //-------------------------------------------------| Global Header *
+// .gHeader {
+// 	height: 200px;
+// }
+
+
+.gFooter {
+	margin-top: -90px;
+}
+
+
+.footerSlogan {
+	@include sizeEl(block, left, 100%, 275px);
+	@include backgroundImg('footSlogan.jpg', no-repeat, top center);
+}
+
+
+.ftw {
+	@include sizeEl(block, left, 100%, auto);
+	max-height: 325px;
+	padding: 0;
+}
+
+
+.gContent {
+	padding: 0 0 500px 0;
+}
+
+// home
+.indexHero div {
+	@include backgroundImg("indexHeader.jpg", no-repeat, right top);
+}
+
+
+.iAboutInner {
+	padding-bottom: 0 !important;
+}
+
+.iNewsLetter {
+	display: block !important;
+}
+
+
+.iAboutText {
+	@include sizeEl(block, left, 100%, 425px);
+	@include backgroundImg("iAboutPad.jpg", no-repeat, right top);
+	margin-top: -23px;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5% 5% 0 5%;
+	margin-bottom: 0 !important;
+}
+
+.iAboutText h2, .iAboutText p {
+	color: $white;
+}
+
+.iNewsLetter h2 {
+	margin-bottom: 10px;
+}
+
+.iNewsLetter {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 20px 0 0 0;
+}
+
+
+.iAboutTextInner {
+	@include sizeEl(block, left, 60%, auto);
+	padding: 40px 0 0 0;
+}
+
+.iAboutClass {
+	@include backgroundImg("iClassesPad.jpg", no-repeat, right top);
+	@include sizeEl(block, left, 100%, auto);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 5%;
+	margin-bottom: 0 !important;
+}
+
+.iAboutClass h2, .iAboutClass p {
+	text-align: center;
+	color: $white;
+}
+
+.iClassPadBtn {
+	@include sizeEl(block, none, 89px, auto);
+	margin: 0 auto;
+}
+
+.iAboutClass a.btn {
+	margin: 0 auto;
+	float: none !important;
+}
+
+//==================================================================
+//	Global Elements
+//==================================================================
+
+// header social links
+// header facebook
+.gFacebook {
+	display: block;
+	left: 5%;
+	text-align: left;
+}
+
+// header instagram
+.gInstagram {
+	display: block;
+	right: 5%;
+	text-align: right;
+}
+
+// chinese back ground
+.gContent:before, .gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, 0px 0px);
+	position: absolute;
+	top: 465px;
+	z-index: -2;
+
+	background-color: $b;
+}
+
+.gContent:before {left: -135px;}
+
+.gContent:after {
+	@include afterImg(368px, 1068px, "bodyBgSprite.jpg", no-repeat, -398px 0px);
+	right: -135px; 
+}
+
+//==================================================================
+//	Classes Page
+//==================================================================
+
+.classPrice {
+	@include sizeEl(block, left, 50%, 330px);
+}
+
+.specailClasses {
+
+}
+
+.specailClasses {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+
+}
+
+.scWrapHalf {
+	@include sizeEl(block, left, 50%, auto);
+	padding: 0;
+	margin: 0;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.specialInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+	// padding: 2.5%;
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+
+//==================================================================
+//	Blog Index
+//==================================================================
+
+// blog nav
+.bNav {
+	@include sizeEl(block, left, 32%, auto);
+}
+
+
+.featuredBlog {
+	@include sizeEl(block, right, 66%, auto);
+}
+
+
+.gHeroWrap {
+	height: 385px;
+}
+
+// blog hero
+// .blogHero div {
+// 	@include sizeEl(block, none, 100%, 335px);
+
+// 	max-width: 1140px;
+// 	margin: 20px auto 0 auto;
+// }
+
+
+// hero image
+.gHeroWrap div{
+	@include sizeEl(block, none, 100%, 100%);
+	max-width: 1200px;
+	padding: 100px 2.5% 2.5% 2.5%;
+}
+
+.gHeroWrap div h2 {
+	font-size: 45px;
+}
+
+.gHeroWrap div p {
+	@include sizeEl(block, left, 55%, 100%);
+	color: $white;
+	padding: 20px 3.5% 0 0;
+}
+
+//==================================================================
+//	single post page
+//==================================================================
+
+.singlePostWrap {
+	@include sizeEl(block, right, 66%, auto);
+}
+
+// single post comments
+.commentsWrap img {
+	display: block;
+}
+
+.singleComment {
+	@include sizeEl(block, right, 72%, auto);
+}
+
+
+
+
+
+
+
+
+
+
+// contact page
+
+
+
+.contactWrap {
+	padding: 2.5%;
+}
+
+.contactInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0;
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.formNameWrap {
+	@include sizeEl(block, left, 46%, auto);
+}
+
+.nameRight {float: right;}
+
+// .formNameWrap label {
+// 	@include sizeEl(block, left, 47%, auto);
+// }
+
+// .firstName {
+// 	@include sizeEl(block, left, 100%, 35px);
+// }
+
+// .lastName {
+// 	@include sizeEl(block, left, 100%, 35px);
+// }
+
+.contactHalf {
+	@include sizeEl(block, left, 50%, auto);
+	background-color: none;
+	padding: 2.5%;
+	margin: 0 0 2.5% 0;
+
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+
+
+
+
+.mapContactInfo {
+	@include sizeEl(block, none, 368px, 157px);
+	background-color: transparent !important;
+	// position: absolute;
+	// z-index: 10;
+	top: 95px;
+	right: 0px;
+	@include spritePos("sprite.png", -1198px 0px);
+
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+
+
+	text-align: center;
+}
+
+.mapPhone {
+	position: absolute;
+	top: 10px;
+	left: 70px;
+	text-align: left;
+}
+
+.mapSocial, .mapAdress {
+	display: block;
+	position: absolute;
+}
+
+.mapAdress {
+	top: 53px;
+	left: 84px;
+}
+
+.mapSocial {
+	@include sizeEl(block, left, 100%, 50px);
+	top: 108px;
+	left: 84px;	
+}
+
+.mapSocial li {
+	@include sizeEl(block, left, 35px, 50px);
+	text-align: left;
+	font-size: 20px;
+}
+
+.mapSocial a {
+	color: $bGray;
+}
+
+
+// About
+
+.teacherWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+	position: relative;
+}
+
+.teacherInner {
+	@include sizeEl(block, left, 100%, 615px);
+	@include backgroundImg("teacherBg.jpg",no-repeat,bottom left); 
+	// Delete this
+	background-color: #11528a;
+	position:relative;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	overflow: hidden !important;
+
+}
+
+.teacherPicNav {
+	@include sizeEl(block, left, 127px, 88px);
+	@include backgroundImg("teacherNavBg.png",no-repeat, center); 
+
+	position: absolute;
+	top: 80%;
+	left: 4%;
+	z-index:20;
+}
+
+.teacherPicNav a {
+	@include sizeEl(block, none, 50%, 58px);
+	overflow: hidden;
+	text-indent: -99999px;
+	position: absolute;
+	z-index:-1;
+	top: 26px;
+}
+
+.tpvLinkLeft {
+	@include backgroundImg("picArrows.png",no-repeat, 0px 0px);
+	left: 4px;
+}
+
+.tpvLinkRight {
+	left: 84px;
+	@include backgroundImg("picArrows.png",no-repeat, 0px -58px);
+}
+
+.tpvLinkRight:hover {
+	left: 90px;
+}
+
+.tpvLinkLeft:hover {
+	left: -4px;
+}
+
+.tpnPopUp {
+	@include sizeEl(block, left, 177px, 76px);
+	@include backgroundImg("popupBg.png",no-repeat, 0px 0px); 
+	position:absolute;
+	top: -70px;
+	left: -18%;
+	color: $bGray;
+	opacity: 1;
+}
+
+.teacherPicNav:hover .tpnPopUp {
+	opacity: 0;
+}
+
+.tpnPopUp span {
+	@include sizeEl(block, left, 100%, 76px);
+	color: $bGray !important;
+	padding: 22px 20px 20px 20px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+
+.teacherCustomPic {
+	@include sizeEl(block, left, 50%, 650px);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.teacherImgs {
+	@include sizeEl(block, left, 100%, auto);
+	position: absolute;
+	bottom: 0px;
+}
+
+.teacherImgs img {
+	width: 100%;
+	position: absolute; bottom: 0;
+}
+
+
+.teacherInner h1, .teacherInner span {
+	color: $white;
+}
+
+.teacher {
+		@include sizeEl(block, left, 100%, auto);
+		padding: 2.5%;
+
+}
+
+.techerTitleWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.techerTitleWrap h1 {
+	@include sizeEl(block, left, 100%, auto);
+	text-align: center;
+	font-size: 38px;
+	padding: 15px 0 15px 0;
+}
+
+.teacherNav {
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+}
+
+.teacherNav ul {
+	@include sizeEl(block, none, 95%, 42px);
+	margin: 0 auto;
+	background-color: $white;
+	position: relative;
+}
+
+.teacherNav li {
+	@include sizeEl(block, left, 25%, auto);
+	text-align: center;
+	padding: 10px 0;
+	position: relative;
+}
+
+.teacherNav a {
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: $bPurple;
+	position: relative;
+	z-index: 9999999;
+}
+
+
+.teacherTextWrap {
+		@include sizeEl(block, right, 55%, auto);
+
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background-color: transparent;
+}
+
+.teacherTextWrap h2, .teacherTextWrap p {
+	color: $white;
+}
+
+.mobileTeccherImg {
+	display: none !important;
+}
+
+.notActive {
+	display: none;
+}
+
+.classPrice {
+	padding: 10px;
+}
+
+.classesHero {
+	padding: 20px 0 0 0;
+}
+
+.classHeroInner {
+	@include sizeEl(block, none, 100%, 365px);
+	@include backgroundImg("headerClass.jpg",no-repeat, left center);
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+}
+
+
+.classHeroInner h1 {
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 8px rgba(0,0,0,.46);
+	text-rendering : optimizelegibility;
+	font-size: 2.8em;
+	color: $white;
+}
+
+.classHeroInner p {
+	display: none;
+	// line-height: 28px;
+}
+
+
+// classes 
+.classHeroInner div {
+	@include sizeEl(block, left, 100%, 365px);
+	text-align: left;
+	padding: 115px 5% 5% 5%;
+}
+
+.specialClass1 {
+	@include backgroundImg("specialClassBg1.jpg",no-repeat, center bottom);
+	min-height: 650px;
+}
+
+.specialClass2 {
+	@include backgroundImg("specialClassBg2.jpg",no-repeat, center bottom);
+	min-height: 650px;
+}
+
+.specialClass1 h2, .specialClass1 p,
+.specialClass2 h2, .specialClass2 p {
+	color: $white;
+}
+
+.specialClass2 {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // About
+
+// .teacherTextWrap {
+// 		@include sizeEl(block, left, 50%, auto);
+
+// 		background-color: $white;
+
+// 		-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+// 		-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+// 		box-shadow: 0 0 9px rgba(0,0,0,.15);
+// }
+
+// .teacherTextWrap .mobileTeccherImg {
+// 	@include sizeEl(block, left, 100%, auto);
+// }
+
+// .ttwInner {
+// 	@include sizeEl(block, left, 100%, auto);
+
+// 	padding: 5%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

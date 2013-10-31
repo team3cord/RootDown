@@ -1,0 +1,817 @@
+//======================================================================// 
+                                                                       //
+     // _page.scss              		                           
+		                                                     		 //-----[ Page
+//==================================================================//
+
+   
+       
+/*  
+    
+    This file defines page specific elements ( home | about | classes ) ect.
+
+*/
+
+
+.nonActiveImg {display:none;}
+
+// blog hero
+.gHeroWrap {
+	@include sizeEl(block, left, 100%, 200px);
+}
+
+// hero image
+.gHeroWrap div {
+	@include sizeEl(block, none, 100%, 200px);
+	//@include backgroundImg('blogHeader.jpg', no-repeat, top);
+	margin: 0 auto;
+	padding: 80px 2.5% 0 2.5%;
+}
+
+.gHeroWrap div h2 {
+	color: $white;
+	padding: 0 3.5% 0 0;
+}
+
+.gHeroWrap div p {
+	display: none;
+}
+
+
+//==================================================================
+//	Home Page
+//==================================================================
+
+.indexHero div {
+	@include backgroundImg("mIndexHeader.jpg", no-repeat, right top);
+}
+
+// // About tout
+// .iAbout {
+// 	@include sizeEl(block, left, 100%, 550px);
+// 	// @include backgroundImg('mHomeSprite.jpg', no-repeat, top right);
+// 	// -moz-background-size: 100% 465px;
+//  //    	background-size: 100% 465px;
+
+// 	// padding: 2.5%;
+
+// 	color: $white;
+// }
+
+// // about title 
+// .iAbout h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// // about tout
+// .iAboutText {
+// 	@include sizeEl(block, left, 100%, 275px);
+// 	padding: 5%;
+// }
+
+// // newsletter tout
+// .iAboutText div {display:none;}
+
+// // classes
+// .iAboutClass {
+// 	@include sizeEl(block, left, 100%, 275px);
+
+// 	padding: 5%;
+// 	margin: 0 !important;
+
+// 	color: $white;
+// 	text-align: right;
+// }
+
+// .iYogaAk {
+// 	@include sizeEl(block, left, 100%, 600px);
+// }
+
+// .iYogaKid {
+// 	@include sizeEl(block, left, 100%, 325px);
+// 	@include backgroundImg('mHomeSprite.jpg', no-repeat, right -600px);
+
+// 	padding: 5%;
+
+// 	color: $white;
+// }
+
+// .iYogaKid h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// .iYogaKid .btn {
+// 	margin: 0 15px 0 0;
+// }
+
+// .iYogaAdult {
+// 	@include sizeEl(block, left, 100%, 275px);
+// 	@include backgroundImg('mHomeSprite.jpg', no-repeat, left -925px);
+
+// 	padding: 5%;
+
+// 	color: $white;
+// 	text-align: right;
+// }
+
+// .iYogaAdult h2 {
+// 	text-shadow: 2px 3px 8px rgba(0,0,0,.4);
+// 	color: $white;
+// 	padding: 15px 0 15px 0;
+// }
+
+// .iYogaAdult .btn {
+// 	margin: 0 0 0 15px;
+// }
+
+// .snapG, .iBlogWrap, .iInstaWrap {
+// 	display: none;
+// }
+
+
+.iAbout {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.iAboutInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0 0 20px 0;
+}
+
+.iAboutText {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	padding: 5%;
+	margin-bottom: 20px;
+}
+
+.iAboutClass {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	padding: 5%;
+}
+
+.iNewsLetter {
+	display: none !important;
+}
+
+.iNewsBtn {
+	margin: -35px 0 0 0;
+	max-height:34px;
+}
+
+.iYogaAk {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.iYogaKid, .iYogaAdult {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	padding: 5%;
+	margin-bottom: 20px;	
+}
+
+.iBlogWrap {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+	margin-bottom: 20px;	
+}
+
+.iBlogWrap img {width: 100%;}
+
+.iBlogWrap div {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5%;	
+}
+
+.iInstaWrap {display: none;}
+
+//==================================================================
+//	Classes Page
+//==================================================================
+
+.classesHero {
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+	padding: 0 0 0 0;
+	z-index:-10;
+}
+
+.classHeroInner {
+	@include sizeEl(block, none, 100%, auto);
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	z-index:-100;
+}
+
+.classHeroInner div {
+	@include sizeEl(block, none, 100%, auto);
+	text-align: center;
+	padding: 5%;
+}
+
+.classHeroInner h1 {
+	font-size: 32px;
+}
+
+.classPrice {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+	position: relative;
+	z-index: 10;
+
+
+	color: $white;
+
+	background-color: $classesBlue;
+}
+
+.priceInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: #104e79;
+	padding: 2.5% 2.5% 6% 2.5%;
+	text-align: center;
+}
+
+.classPrice h3 {
+	font-size: 20px;
+	color: $white;
+	padding: 10px 0;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 8px rgba(0,0,0,.46);
+	font-weight: normal;
+}
+
+.classPrice span {
+	@include sizeEl(block, left, 100%, 30px);
+	color: $white;
+	letter-spacing: 1px;
+	padding: 0;
+}
+
+.classPrice i {
+	@include sizeEl(block, left, 100%, 30px);
+	color: $white;
+	letter-spacing: 1px;
+}
+
+.lastPrice {
+	padding: 20px 0 0 0 !important;
+}
+
+.classPrice span em {
+	@include sizeEl(block, left, 100%, 10px);
+	font-size: 11px;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.capMem {
+	@include sizeEl(block, left, 100%, 10px);
+	text-transform:uppercase;
+}
+
+.capMem span{
+	@include sizeEl(block, left, 100%, 10px);
+	text-transform:none;
+}
+
+.priceCol1 {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.priceCol2 {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.classWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.classesInner {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: #000;
+	color: $white;
+}
+
+.classesTextWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5% 5% 0 5%;
+	border-bottom: solid 1px $classBorder;
+}
+
+.classesTextWrap h2, .classesTextWrap p {
+	color: #fff;
+}
+
+.classesTextWrap .btn {
+	margin: 0 0 20px 0;
+}
+
+.specailClasses {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.scWrapHalf {
+	@include sizeEl(block, left, 100%, auto);
+	margin: 0 0 5% 0;
+	// padding: 2.5%;
+
+	background-color: $white;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.scWrapHalf div {
+	padding: 5%;
+}
+
+//==================================================================
+//	Blog Index
+//==================================================================
+
+.blogNavWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+// div nav wrap
+.bNav {
+	@include formal(18px, $bPurple);
+	@include sizeEl(block, left, 100%, auto);
+
+	margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+// actual nav el
+// .blogCatNav {
+// 	padding: 5%;
+// }
+
+// blog nave list items
+.blogCatNav li {
+	@include sizeEl(block, left, 100%, 50px);
+
+	border-bottom: solid 1px $grayBorder;
+
+}
+
+
+
+
+// blog nav links also the filter title
+.blogCatNav li a, .blogCatNav span {
+	display: block;
+	float: left;
+	width: 100%;
+	// padding: 15px 0;
+	padding: 15px 5% 5% 5%;
+}
+
+.blogCatNav li:hover {
+	background-color: $b;
+	@include backgroundImg("blogNavHover.png", repeat-x, top);
+}
+
+.blogCatNav li:hover a {
+	color: #fff;
+}
+
+.listTitle:hover {
+	background-image: none !important;
+}
+
+// filter title
+.blogCatNav span {
+	font-size: 18px;
+	padding: 2px 5% 0 5% !important;
+}
+
+// blag nav links
+.bNav a {
+	color: $bGray;
+}
+
+// featured post
+.featuredBlog {
+	@include sizeEl(block, left, 100%, auto);
+	
+	// margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+.featuredBlog div{padding: 5%;}
+
+// featured blog image
+.featuredBlog img {
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+// blogWrap
+.blogWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+// blog row | this holds the blog touts in a row
+.blogRow {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5%;
+}
+
+.blogPost {
+	@include sizeEl(block, left, 100%, auto);
+	position: relative;
+	background-color: $white;
+
+
+	margin: 0 0 20px 0;
+
+	// shadows
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+} 
+
+// paper texture
+.blogPost:after {
+	@include afterImg(100%, 20px, "sprite.png", no-repeat, absolute);
+	@include spritePos("sprite.png", 0px -144px);
+}
+
+// blog post image
+.blogPost img {
+	width: 100%;
+}
+
+.blogPost article {
+	padding: 5%;
+}
+
+//==================================================================
+//	Single Post Page
+//==================================================================
+
+// single wrap
+.singlePostWrap {
+	@include sizeEl(block, left, 100%, auto);
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+
+	background-color: $white;
+}
+
+.halfFromWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.postWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 5%;
+	position: relative;
+}
+
+.postWrap:after {
+	@include afterImg(100%, 10px, "sprite.png", no-repeat, 0px -150px);
+	left: 0;
+}
+
+.singlePostWrap img {
+	width: 100%;
+}
+
+// commment form wrap
+.commentFormWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 0 5% 5% 5%;
+	position: relative;
+}
+
+// form lable
+.commentFormWrap input[type="submit"] {
+	float: right;
+	width: 150px;
+	margin: 10px 0 0 0;
+	position: relative;
+}
+
+.commentFormWrap:after {
+	@include afterImg(100%, 10px, "sprite.png", no-repeat, 0px -150px);
+	left: 0; 
+	bottom: 5px;
+}
+
+// single comments
+.commentsWrap {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 3% 5% 5% 5%;
+}
+
+.commentsWrap img {
+	max-width: 185px;
+	display: none;
+	width:25%;
+	float: left;
+}
+
+.singleComment {
+	@include sizeEl(block, right, 100%, auto);
+}
+
+.commentsWrap h3 {
+	@include sizeEl(block, left, 100%, auto);
+	font-size: 22px;
+}
+
+// date
+
+.commentsWrap date {
+	@include sizeEl(block, right, 100%, auto);
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: $bGray;
+
+	margin: -10px 0 10px 0;
+
+}
+
+.commentsWrap p {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+// contact
+
+.mapWrap {
+	@include sizeEl(block, left, 100%, 300px);
+	padding: 40px 0 0 0;
+	background-color: none;
+	position: relative;
+}
+
+.mapContact {
+	@include sizeEl(block, none, 100%, 330px);
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+	position: relative;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.mapContactInfo {
+	@include sizeEl(block, none, 100%, 60px);
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	right: 0px;
+	// @include spritePos("sprite.png", 0px 0px);
+
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+
+	background-color: $white;
+	text-align: center;
+}
+
+.mapPhone {
+	font-size: 22px;
+	padding: 15px;
+	color: $bPurple;
+	text-decoration: none;
+}
+
+.mapSocial, .mapAdress {
+	display: none;
+}
+
+.contactWrap {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.contactInner {
+	@include sizeEl(block, left, 100%, auto);
+	padding: 2.5% 2.5% 0 2.5%;
+}
+
+.contactHalf {
+	@include sizeEl(block, left, 100%, auto);
+	background-color: $white;
+	padding: 5%;
+	margin: 0 0 2.5% 0;
+
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+	box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.angelaContact {
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+	color: $bPurple;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.angelaContact a {
+	color: $bPurple;
+}
+
+.newsLetterInput {
+	@include sizeEl(block, left, 68%, 35px);
+}
+
+.signUpBtn {
+	@include sizeEl(block, right, 30%, 35px);
+}
+
+.contactSubmitBtn {
+	@include sizeEl(block, right, 130px, 35px);
+	margin: 10px 0 0 0;
+}
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.callUs {
+	@include backgroundImg("contactBg.jpg",no-repeat, left center);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.callUsWrap h2, .callUsWrap p, .callUsWrap ul, .callUsWrap a,
+.cNewsletterWrap h2, .cNewsletterWrap p {
+	color: $white;
+}
+
+.messageTitle {
+	color: $bPurple;
+}
+
+// .callUsWrap h2 {
+// 	text-shadow: 0 0 21px rgba(0,0,0,.85);
+// }
+
+
+
+
+// About
+
+
+// blog hero
+.aboutHero {
+	@include sizeEl(block, left, 100%, 200px);
+}
+
+// hero image
+.aboutHero div{
+	@include sizeEl(block, none, 100%, 200px);
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+	background-color: #ccc;
+}
+
+
+.techerTitleWrap h1 {
+	display: none;
+}
+
+
+.teacherCustomPic {
+	display: none;
+}
+
+
+.teacherNav {
+	display: none;
+}
+
+.teacherPicNav {
+	display: none;
+}
+
+
+.teacher {
+		@include sizeEl(block, left, 100%, auto);
+		padding: 2.5%;
+
+}
+
+.teacherTextWrap {
+		@include sizeEl(block, left, 100%, auto);
+
+		background-color: $white;
+
+		-webkit-box-shadow: 0 0 9px rgba(0,0,0,.15);
+		-moz-box-shadow: 0 0 9px rgba(0,0,0,.15);
+		box-shadow: 0 0 9px rgba(0,0,0,.15);
+}
+
+.teacherTextWrap .mobileTeccherImg {
+	@include sizeEl(block, left, 100%, auto);
+}
+
+.ttwInner {
+	@include sizeEl(block, left, 100%, auto);
+
+	padding: 5%;
+}
+
+
+
+.blogCatNav li a {
+	@include backgroundImg("blogTeachSprite.png",no-repeat, 0px 0px);
+	overflow: hidden;
+	height: 49px;
+}
+
+.blogCatNav li a.bNavAngela    {background-position: right 5px;}
+.blogCatNav li a.bNavVictoria  {background-position: right -61px;}
+.blogCatNav li a.bNavChelsey   {background-position: right -135px;}
+.blogCatNav li a.bNavEleanor   {background-position: right -204px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

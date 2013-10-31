@@ -134,8 +134,8 @@
 
                 <span class="staticLogo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></span>
 
-                <a href="#" class="gSocial gFacebook">Follow on Facebook</a>
-                <a href="#" class="gSocial gInstagram">Follow on Instagram</a>
+                <a href="https://www.facebook.com/pages/Root-Down-Yoga-Hood-River/185551128203707" target="_blank" class="gSocial gFacebook">Follow on Facebook</a>
+                <a href="http://instagram.com/gorgepoweryoga" class="gSocial gInstagram" target="_blank">Follow on Instagram</a>
             </section>
             <!-- =========================== | !!!END BRANDING | =========================== -->
 

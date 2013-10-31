@@ -25,6 +25,8 @@
 	@include sizeEl(block, left, 100%, auto);
 	max-height: 325px;
 	padding: 0;
+	position: relative;
+	z-index: 99999;
 }
 
 
@@ -80,12 +82,12 @@
 
 .iAboutClass {
 	@include backgroundImg("iClassesPad.jpg", no-repeat, right top);
-	@include sizeEl(block, left, 100%, auto);
+	@include sizeEl(block, left, 100%, 325px);
 
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	padding: 5%;
+	padding: 19%;
 	margin-bottom: 0 !important;
 }
 
@@ -102,6 +104,25 @@
 .iAboutClass a.btn {
 	margin: 0 auto;
 	float: none !important;
+}
+
+.iYogaKid {
+	@include backgroundImg("iKidYogaPad.jpg",no-repeat,bottom right); 
+	min-height: 300px;
+}
+
+.iYogaAdult {
+	@include backgroundImg("iAdultYogaPad.jpg",no-repeat,bottom right);
+	min-height: 300px;
+}
+
+.iYogaKid h2, .iYogaKid p, 
+.iYogaAdult h2, .iYogaAdult p {
+	color: $white;
+}
+
+.iYogaKid p, .iYogaAdult p {
+	width: 55%;
 }
 
 //==================================================================
@@ -195,6 +216,9 @@
 
 .gHeroWrap {
 	height: 385px;
+	padding-top: 30px;
+	position: relative;
+	z-index: 2 !important;
 }
 
 // blog hero
@@ -481,16 +505,18 @@
 }
 
 .teacherNav ul {
-	@include sizeEl(block, none, 95%, 42px);
+	@include sizeEl(block, none, 95%, 75px);
 	margin: 0 auto;
 	background-color: $white;
 	position: relative;
+	overflow: hidden;
+	@include backgroundImg("aboutNavBg.png",no-repeat, top center); 
 }
 
 .teacherNav li {
 	@include sizeEl(block, left, 25%, auto);
 	text-align: center;
-	padding: 10px 0;
+	padding: 25px 0;
 	position: relative;
 }
 
@@ -505,6 +531,9 @@
 	z-index: 9999999;
 }
 
+/*.bottomClass {
+	border-bottom: none !important;
+}*/
 
 .teacherTextWrap {
 		@include sizeEl(block, right, 55%, auto);

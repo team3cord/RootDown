@@ -1,0 +1,101 @@
+s/formal_436-webfont.eot');
+    src: url('../fonts/formal_436-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/formal_436-webfont.woff') format('woff'),
+         url('../fonts/formal_436-webfont.ttf') format('truetype'),
+         url('../fonts/formal_436-webfont.svg#formal_436regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//=====//=====//   Helper Styles  //=====//=====//
+
+.left {
+  display:block; 
+  float:left;
+}
+
+.right {
+  display:block; 
+  float:right;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+.spr {
+  background-image:url('../img/sprite.png');
+}
+
+.hidden{
+  display:none;
+}
+
+
+// mobile only elements | elements that are specified only for a mobile device
+.mOnly {
+  display: block;
+  visibility: visible;
+}
+
+// non mobile elements | elements that are not specified for a mobile device
+.nonM {
+  // position: absolute !important;
+  // top: -9999px !important;
+  // left: -9999px !important;
+   display: none !important;
+}
+
+// row | used as a wraper to create a "row"
+.row {
+  display: block;
+  float: left;
+}
+
+//=====//=====//   Element Size Syles   //=====//=====//
+
+// fullWrap is used to wrap elements the full width of the parent element ( body / gWrap / ect.)
+.fullWrap {
+  display: block;
+  width: 100%;
+}
+
+// full is for full width elements inside of another element
+.full {
+  width: 100%;
+}
+
+// half is for half width elements
+.half {
+  width: 50%;
+}
+
+// quarter is for quarter width elements
+.quarter {
+  width: 100%;
+}
+
+.mid {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+// All tout style
+.tout {
+  display: block;
+  // padding:5%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -65,15 +65,13 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
     <!-- MENU SCRIPS -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script>
+<!--     // <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script> -->
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/mmenu.min.js"></script>
 
     <!-- MENU SCRIP -->
     <script type="text/javascript">
         $(function() {
-            $('nav#menu').mmenu({
-                dragOpen: true
-            });
+            $('nav#menu').mmenu({});
         });
     </script>
 

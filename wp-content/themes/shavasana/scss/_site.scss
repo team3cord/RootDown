@@ -1,4 +1,56 @@
-s/formal_436-webfont.eot');
+//========================================================================// 
+                                                                         //
+    // _site.scss                                                       //     SITE STYLES
+                                                                       //
+//====================================================================//
+
+
+
+//=====//=====//   Root Styles  //=====//=====//
+
+// Viewport MQ's
+
+@-webkit-viewport {width:device-width;}
+@-moz-viewport {width:device-width;}
+@-ms-viewport {width:device-width;}
+@-o-viewport {width:device-width;}
+@viewport {width:device-width;}
+
+// fixes padding equations
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+html {
+  width : 100%; height:100%;
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten($basecolor, 75%);
+  -webkit-text-size-adjust : 100%;
+  -ms-text-size-adjust : 100%;
+   overflow-x: hidden;
+}
+
+body {
+  width : 100%; 
+  height: 100%;
+  margin : 0 !important;
+  padding : 0 !important;
+  font-family : $basefont;
+  line-height : $baselineheight;
+  color : $textcolor;
+  background-image:url(../img/bg.jpg);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// Box sizing for all elements | this allows us not to do math for padding and such
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+// Header fonts
+@font-face {
+    font-family: 'formal_436regular';
+    src: url('../fonts/formal_436-webfont.eot');
     src: url('../fonts/formal_436-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/formal_436-webfont.woff') format('woff'),
          url('../fonts/formal_436-webfont.ttf') format('truetype'),

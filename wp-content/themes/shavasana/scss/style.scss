@@ -9,6 +9,10 @@ Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
 
 // 1. ROOT 					==============================
 
+// Font Awesome icon fonts (optional)
+@import "font-awesome";
+
+
 // CSS reset
 @import "reset";
 
@@ -22,9 +26,6 @@ Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
 
 // Site wide styles (html, body)
 @import "site";
-
-// Font Awesome icon fonts (optional)
-@import "font-awesome";
 
 // Figures, images and other elements
 @import "elements";
