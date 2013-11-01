@@ -13,7 +13,7 @@
 */
 
 .adWrap {
-	@include sizeEl(block, left, 50%, 325px);
+	@include sizeEl(none, left, 50%, 325px);
 	@include backgroundImg('specialPicOne.jpg', no-repeat, top center);
 
 	-webkit-background-size: cover;
@@ -22,9 +22,17 @@
 	background-size: cover;
 
 	background-color: $b;
+	padding: 2.5%;
 }
 
+.adWrap span {
+	font-size:18px;
 
+
+	font-family: 'formal_436regular';
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 .nonActiveImg {display:none;}
@@ -149,7 +157,7 @@
 
 .iAbout {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 2.5%;
+	padding: 2.5% 2.5% 0 2.5%;
 }
 
 .iAboutInner {
@@ -189,7 +197,7 @@
 
 .iYogaAk {
 	@include sizeEl(block, left, 100%, auto);
-	padding: 2.5%;
+	padding: 0% 2.5% 2.5% 2.5% ;
 }
 
 .iYogaKid, .iYogaAdult {

@@ -9,6 +9,27 @@
 // 	height: 200px;
 // }
 
+#page:before {
+	@include afterImg(100%, 190px, "bodyBg.jpg", repeat-x, top center);
+	position: absolute;
+	top: 365px;
+	background-color: #bada55;
+	z-index: 0;
+}
+
+.mbWrap{
+		@include sizeEl(block !important, left, 50%, 100%);
+		padding: 2.5%;
+} 
+
+
+.adWrap {
+	@include sizeEl(block !important, left, 50%, 334px);
+	position: relative;
+	z-index: 1;
+	margin-top: -5px;
+}
+
 
 .gFooter {
 	margin-top: -90px;

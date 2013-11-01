@@ -6,6 +6,14 @@
 
 
 // home
+.adWrap {
+	@include sizeEl(none !important, left, 50%, 325px);
+	position: relative;
+	z-index: 0;
+}
+
+
+
 
 .iAboutInner {
 	@include sizeEl(block, left, 100%, auto);

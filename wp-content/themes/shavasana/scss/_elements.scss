@@ -39,7 +39,7 @@
 	position: absolute;
 	top: 365px;
 	background-color: #bada55;
-	z-index: 0;
+	z-index: -1;
 }
 
 
@@ -316,7 +316,7 @@
 .gContent {
 	@include sizeEl(block, none, 100%, inherit);
 	max-width: 1200px;
-	position: relative;
+	//position: relative;
 	z-index: 1;
 }
 
@@ -353,11 +353,9 @@
 // }
 
 .adWrap {
-	@include sizeEl(block, left, 50%, 325px);
+	@include sizeEl(none, left, 50%, 325px);
 	position: relative;
 	z-index: 1;
-
-	// background-color: #ccc;
 }
 
 // this is the mind body schedule wrap

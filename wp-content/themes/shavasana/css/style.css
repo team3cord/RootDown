@@ -1871,7 +1871,7 @@ body {
   position: absolute;
   top: 365px;
   background-color: #bada55;
-  z-index: 0; }
+  z-index: -1; }
 
 .gHeader {
   display: block;
@@ -2116,7 +2116,6 @@ body {
   width: 100%;
   height: inherit;
   max-width: 1200px;
-  position: relative;
   z-index: 1; }
 
 .gContent:before, .gContent:after {
@@ -2136,7 +2135,7 @@ body {
   padding: 2.5%; }
 
 .adWrap {
-  display: block;
+  display: none;
   float: left;
   width: 50%;
   height: 325px;
@@ -2157,7 +2156,7 @@ body {
 
 */
 .adWrap {
-  display: block;
+  display: none;
   float: left;
   width: 50%;
   height: 325px;
@@ -2166,7 +2165,14 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #bada55; }
+  background-color: #bada55;
+  padding: 2.5%; }
+
+.adWrap span {
+  font-size: 18px;
+  font-family: 'formal_436regular';
+  font-weight: normal;
+  font-style: normal; }
 
 .nonActiveImg {
   display: none; }
@@ -2200,7 +2206,7 @@ body {
   float: left;
   width: 100%;
   height: auto;
-  padding: 2.5%; }
+  padding: 2.5% 2.5% 0 2.5%; }
 
 .iAboutInner {
   display: block;
@@ -2244,7 +2250,7 @@ body {
   float: left;
   width: 100%;
   height: auto;
-  padding: 2.5%; }
+  padding: 0% 2.5% 2.5% 2.5%; }
 
 .iYogaKid, .iYogaAdult {
   display: block;
@@ -3585,8 +3591,16 @@ span.custom-number-button {
     margin: 0 auto; }
 
   .nonM {
-    display: block !important; } }
+    display: block; } }
 @media only screen and (min-width: 600px) {
+  .adWrap {
+    display: none !important;
+    float: left;
+    width: 50%;
+    height: 325px;
+    position: relative;
+    z-index: 0; }
+
   .iAboutInner {
     display: block;
     float: left;
@@ -3716,6 +3730,34 @@ span.custom-number-button {
     background-color: #000000;
     padding-bottom: 200px; } }
 @media only screen and (min-width: 768px) {
+  #page:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 190px;
+    background: transparent url(../img/bodyBg.jpg) repeat-x top center;
+    position: absolute;
+    top: 365px;
+    background-color: #bada55;
+    z-index: 0; }
+
+  .mbWrap {
+    display: block !important;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 2.5%; }
+
+  .adWrap {
+    display: block !important;
+    float: left;
+    width: 50%;
+    height: 334px;
+    position: relative;
+    z-index: 1;
+    margin-top: -5px; }
+
   .gFooter {
     margin-top: -90px; }
 
@@ -4277,6 +4319,9 @@ span.custom-number-button {
   .fullWrap {
     width: 100% !important; }
 
+  .adWrap h2 {
+    max-width: 65%; }
+
   .blogNavWrap {
     padding: 0; }
 
@@ -4476,7 +4521,8 @@ span.custom-number-button {
   .iGramPicWrap img {
     float: left;
     padding: 0px !important;
-    margin: 0px; }
+    margin: 0px;
+    width: 14.2857143%; }
 
   .iBlog {
     padding: 0 5% !important; } }

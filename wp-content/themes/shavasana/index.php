@@ -33,17 +33,23 @@ get_header(); ?>
             <section class="ftw full">
                 <!-- ad Wrap | wraps specials ad -->
                 <div class="adWrap nonM half">
-                    <p>Place Ad Here</p> 
+                    <h2>$15 for 1 Week of Unlimited Yoga</h2>
+                        <span>* New Students Only * </span>
+                        <p clas="smallLimit">Limited to one per student</p>
                 </div>
                  <!-- schedule wrap Wrap | wraps  schedule-->
                 <div class="shedWrap">
-                    <h2>Date is here</h2>
                     <div class="mbWrap">
-                        This is the mind body stuff
+                    <h2>Date is here</h2>
+                        <ul>
+                            <li>9:00 am Core Yoga  Emma-Rose Rossoff (1) 1 hour</li>
+                            <li>12:00 pm Power Lunch Hour eleanor edgerly 1 hour</li>
+                            <li>5:30 pm Power Yoga  eleanor edgerly (2) 1 hour</li>
+                        </ul>
+                        <a href="#" class="btn btnPurp Share"><i class="icon-plus"></i>Share</a>
+                        <a href="#" class="btn">Learn More</a>
+                        <a href="#" class="btn">Sign Up</a>
                     </div>
-                    <a href="#" class="btn btnPurp Share"><i class="icon-plus"></i>Share</a>
-                    <a href="#" class="btn">Learn More</a>
-                    <a href="#" class="btn">Sign Up</a>
                 </div>
             </section>
             <!-- =========================== | !!!END FTW | =========================== -->
@@ -56,13 +62,13 @@ get_header(); ?>
                             <h2>About RootDownYoga</h2>
                             <p>We at Root Down Yoga believe in living a grounded, simple life filled with vitality and health.  Our goal is to offer a simple, clean, and quiet space with invigorating, fun classes designed to suit the needs of all our members.</p>
                             <a href="#" class="btn">Learn More</a>
-                            <div class="iNewsLetter">
+<!--                             <div class="iNewsLetter">
                                 <h2>News Letter Sign Up</h2>
                                  <form action="index.html" method="post" class="subscribe-form">
                                   <input type="email" name="email" class="subscribeInput" placeholder="Email address" autofocus>
                                   <input type="submit" name="subscribe" value="subscribe" class="signUpBtn iNewsBtn" />
                                 </form>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="iAboutClass">
@@ -84,7 +90,7 @@ get_header(); ?>
 
                     <div class="iYogaKid">
                         <h2>Yoga for Kids</h2>
-                        <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus. Maenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna.</p>
+                        <p>Encourages community and cooperation</p>
                         <!--<a href="#" class="btn learnMore">Learn More</a>
                         <a href="#" class="btn">View Schedule</a>-->
                     </div>
@@ -130,6 +136,11 @@ get_header(); ?>
                         <section class="iInstaWrap">
                             <h1>Power Yoga for the Gorge</h1>
                             <div class="iGramPicWrap"> 
+                                <img src="http://placehold.it/120x120">
+                                <img src="http://placehold.it/120x120">
+                                <img src="http://placehold.it/120x120">
+                                <img src="http://placehold.it/120x120">
+                                <img src="http://placehold.it/120x120">
                                 <img src="http://placehold.it/120x120">
                                 <img src="http://placehold.it/120x120">
                                 <img src="http://placehold.it/120x120">
